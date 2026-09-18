@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap');
+
+@theme {
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* SAP 72 Brand Variable & 72 Typeface Web Fonts */
+@font-face {
+  font-family: "72 Brand Variable";
+  font-style: normal;
+  font-weight: 300 400;
+  font-display: swap;
+  src: local("72 Brand Variable"), local("72 Brand"), local("72"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "72 Brand Variable";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("72 Brand Variable Semibold"), local("72 Brand Semibold"), local("72-Semibold"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "72 Brand Variable";
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: local("72 Brand Variable Bold"), local("72 Brand Bold"), local("72-Bold"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "72";
+  font-style: normal;
+  font-weight: 300 400;
+  font-display: swap;
+  src: local("72"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "72";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("72 Semibold"), local("72-Semibold"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "72";
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: local("72 Bold"), local("72-Bold"),
+       url("https://sdk.openui5.org/resources/sap/ui/core/themes/sap_horizon/fonts/72-Bold.woff2") format("woff2");
+}
+
+:root {
+  --ds-secondary-navigation-font-family-fallback: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --sapFontFamily: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --ds-secondary-navigation-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --sapTextColor: #223548;
+  --sapHeadingColor: #000000;
+  --sapH2FontSize: 32px;
+  --sapPFontSize: 20px;
+}
+
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #223548;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.015em;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000000;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  p {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #223548;
+  }
+
+  button, input, optgroup, select, textarea {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  b, strong, .font-bold, .font-extrabold {
+    font-weight: 700 !important;
+  }
+
+  .font-semibold {
+    font-weight: 600 !important;
+  }
+
+  ::selection {
+    background-color: #0066cc;
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background-color: #0066cc;
+    color: #ffffff;
+  }
+}

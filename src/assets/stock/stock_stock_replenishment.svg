@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow3" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad3)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad3)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Stock</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search replenishment rules, items... (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Item Master</text>
+    <text x="210" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Warehouses</text>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Replenishment</text>
+    <line x1="318" y1="14" x2="416" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="440" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Stock Ledger</text>
+    <text x="550" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Reports &amp; Aging</text>
+  </g>
+
+  <!-- Breadcrumb & Header Title -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Stock &gt; Replenishment &gt; <tspan fill="#0066cc">Auto-Reorder Engine</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Maintain Inventory Levels with Stock Replenishment</text>
+    
+    <rect x="560" y="26" width="144" height="24" rx="12" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="574" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#dc2626">• 4 Items Below Safety</text>
+
+    <rect x="714" y="26" width="138" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="728" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">• Auto-MR Trigger ON</text>
+
+    <rect x="1080" y="20" width="136" height="32" rx="6" fill="#0066cc"/>
+    <text x="1098" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Run Reorder Job</text>
+  </g>
+
+  <!-- Top KPI Metrics Banner -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow3)"/>
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">MONITORED INVENTORY SKUs</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">1,840 Items</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">● Continuous Threshold Tracking</text>
+
+      <text x="320" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ITEMS UNDER REORDER LEVEL</text>
+      <text x="320" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#dc2626">4 SKUs Alert</text>
+      <text x="320" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#dc2626">Replenishment Action Triggered</text>
+
+      <text x="620" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AUTO-GENERATED MATERIAL REQ.</text>
+      <text x="620" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0066cc">18 Requests (MTD)</text>
+      <text x="620" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Zero Manual Intervention</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">OVERALL FULFILLMENT RATE</text>
+      <text x="940" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#059669">99.8% On-Time</text>
+      <text x="940" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Zero Stockout Incidents</text>
+    </g>
+  </g>
+
+  <!-- Main Content Layout (Split Cards) -->
+  <g transform="translate(32, 286)">
+    <!-- Left Card: Dynamic Reorder Table -->
+    <rect x="0" y="0" width="770" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow3)"/>
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Automated Re-order Evaluation Queue</text>
+      <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Items reaching safety thresholds automatically trigger internal Material Requests</text>
+
+      <!-- Table Header -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="722" height="32" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="16" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ITEM DESCRIPTION</text>
+        <text x="240" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">WAREHOUSE</text>
+        <text x="360" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">MIN REORDER</text>
+        <text x="460" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ON-HAND</text>
+        <text x="540" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">REORDER QTY</text>
+        <text x="640" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ACTION</text>
+
+        <!-- Row 1 -->
+        <g transform="translate(0, 36)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Industrial Gateway I-90</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SKU: GW-TEL-090</text>
+          <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-01 Central</text>
+          <text x="360" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">200 Nos</text>
+          <text x="460" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">140 Nos</text>
+          <text x="540" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">+500 Nos</text>
+          <rect x="630" y="16" width="82" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe"/>
+          <text x="671" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc" text-anchor="middle">MR Created</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 92)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Solar Sensor Hub</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SKU: SNS-SOL-04</text>
+          <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-02 West</text>
+          <text x="360" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">150 Nos</text>
+          <text x="460" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">82 Nos</text>
+          <text x="540" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">+300 Nos</text>
+          <rect x="630" y="16" width="82" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0"/>
+          <text x="671" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669" text-anchor="middle">RFQ Sent</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 148)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Lithium Cell Pack 48V</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SKU: BAT-48V-PRO</text>
+          <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-01 Central</text>
+          <text x="360" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">100 Nos</text>
+          <text x="460" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">34 Nos</text>
+          <text x="540" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">+250 Nos</text>
+          <rect x="630" y="16" width="82" height="22" rx="11" fill="#fef2f2" stroke="#fecaca"/>
+          <text x="671" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#dc2626" text-anchor="middle">Auto-PO</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(0, 204)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Fiber Transceiver SFP+</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SKU: SFP-10G-LR</text>
+          <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-01 Central</text>
+          <text x="360" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">400 Nos</text>
+          <text x="460" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#ea580c">210 Nos</text>
+          <text x="540" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">+600 Nos</text>
+          <rect x="630" y="16" width="82" height="22" rx="11" fill="#fefce8" stroke="#fef08a"/>
+          <text x="671" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#ca8a04" text-anchor="middle">In Transit</text>
+        </g>
+      </g>
+
+      <!-- Bottom Status Note -->
+      <g transform="translate(0, 316)">
+        <rect x="0" y="0" width="722" height="44" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+        <text x="16" y="27" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">AUTOMATIC PURCHASE TRIGGER: <tspan font-weight="400" fill="#334155">MR-2025-0042 dispatched to Procurement without human latency.</tspan></text>
+      </g>
+    </g>
+
+    <!-- Right Card: Replenishment Pipeline Stepper -->
+    <g transform="translate(794, 0)">
+      <rect x="0" y="0" width="422" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow3)"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Auto-Replenish Sequence</text>
+        <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Seamless handover from Stock to Procurement</text>
+
+        <!-- Stepper Container -->
+        <g transform="translate(0, 50)">
+          <!-- Step 1 -->
+          <g transform="translate(0, 0)">
+            <circle cx="16" cy="16" r="14" fill="#0066cc"/>
+            <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+            <text x="42" y="14" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Threshold Evaluation</text>
+            <text x="42" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Stock falls below safety buffer (140 &lt; 200)</text>
+            <line x1="16" y1="34" x2="16" y2="58" stroke="#cbd5e1" stroke-width="2"/>
+          </g>
+
+          <!-- Step 2 -->
+          <g transform="translate(0, 64)">
+            <circle cx="16" cy="16" r="14" fill="#0066cc"/>
+            <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+            <text x="42" y="14" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Create Material Request</text>
+            <text x="42" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">MR-2025-0042 generated with default vendor</text>
+            <line x1="16" y1="34" x2="16" y2="58" stroke="#cbd5e1" stroke-width="2"/>
+          </g>
+
+          <!-- Step 3 -->
+          <g transform="translate(0, 128)">
+            <circle cx="16" cy="16" r="14" fill="#0066cc"/>
+            <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+            <text x="42" y="14" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Supplier RFQ &amp; Rate Lock</text>
+            <text x="42" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Dispatched to approved suppliers via email/portal</text>
+            <line x1="16" y1="34" x2="16" y2="58" stroke="#cbd5e1" stroke-width="2"/>
+          </g>
+
+          <!-- Step 4 -->
+          <g transform="translate(0, 192)">
+            <circle cx="16" cy="16" r="14" fill="#059669"/>
+            <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">✓</text>
+            <text x="42" y="14" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">Purchase Order Issue</text>
+            <text x="42" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">PO-2025-0091 locked with 4-day delivery SLA</text>
+          </g>
+        </g>
+
+        <!-- KPI Card at bottom -->
+        <g transform="translate(0, 290)">
+          <rect x="0" y="0" width="382" height="70" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="24" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">LEAD TIME BUFFER SAVINGS</text>
+          <text x="16" y="48" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">-4.5 Days</text>
+          <text x="160" y="48" font-family="Poppins, sans-serif" font-size="11" fill="#059669">● Cycle time cut by 65%</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

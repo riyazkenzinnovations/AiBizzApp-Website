@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow2" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad2)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad2)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Stock</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search warehouses, racks, bins, zones... (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Item Master</text>
+    <text x="210" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Warehouses</text>
+    <line x1="208" y1="14" x2="298" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Replenishment</text>
+    <text x="440" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Stock Ledger</text>
+    <text x="550" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Reports &amp; Aging</text>
+  </g>
+
+  <!-- Breadcrumb & Header Title -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Stock &gt; Warehouses &gt; <tspan fill="#0066cc">Tree Structure</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Multi-Tier Warehouse Master &amp; Perpetual Valuation</text>
+    
+    <rect x="520" y="26" width="112" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="534" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• 12 Active Nodes</text>
+
+    <rect x="642" y="26" width="128" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="656" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">• Perpetual GL ON</text>
+
+    <rect x="1080" y="20" width="136" height="32" rx="6" fill="#0066cc"/>
+    <text x="1100" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ New Warehouse</text>
+  </g>
+
+  <!-- Top KPI Metrics Banner -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow2)"/>
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">TOTAL WAREHOUSE SITES</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">12 Facilities</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Across 4 Logistics Zones</text>
+
+      <text x="320" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">PORTFOLIO VALUATION</text>
+      <text x="320" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">$4,829,400.00</text>
+      <text x="320" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">● Perpetual Sync Verified</text>
+
+      <text x="620" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">INTER-HUB TRANSFERS (MTD)</text>
+      <text x="620" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">1,420 Items Moved</text>
+      <text x="620" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Internal Stock Transfer Vouchers</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AVERAGE BIN UTILIZATION</text>
+      <text x="940" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">88.4% Capacity</text>
+      <text x="940" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Optimal Racking Distribution</text>
+    </g>
+  </g>
+
+  <!-- Main Content Layout (Split Cards) -->
+  <g transform="translate(32, 286)">
+    <!-- Left Card: Warehouse Hierarchy Tree -->
+    <rect x="0" y="0" width="690" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow2)"/>
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Hierarchical Warehouse Directory (Tree View)</text>
+      <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Structure mirror of physical warehouses, rooms, racks, and picking bins</text>
+
+      <!-- Tree Nodes Container -->
+      <g transform="translate(0, 48)">
+        <!-- Root Node -->
+        <rect x="0" y="0" width="642" height="34" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">▼ All Warehouses (Global Company Holding Root)</text>
+        <text x="520" y="22" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">$4,829,400.00</text>
+
+        <!-- Child 1: WH-01 -->
+        <g transform="translate(20, 42)">
+          <rect x="0" y="0" width="622" height="32" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+          <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">▼ WH-01: Central Distribution Center (Main Hub)</text>
+          <text x="500" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">$3,605,000.00</text>
+
+          <!-- Sub-locations WH-01 -->
+          <g transform="translate(24, 38)">
+            <rect x="0" y="0" width="598" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="14" y="19" font-family="Poppins, sans-serif" font-size="11" font-weight="500" fill="#334155">• Raw Materials Section (Racks A-01 to A-14) — 3,420 Items</text>
+            <text x="490" y="19" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">$1,120,000</text>
+
+            <rect x="0" y="32" width="598" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="14" y="51" font-family="Poppins, sans-serif" font-size="11" font-weight="500" fill="#334155">• Finished Goods Depot (Racks B-01 to B-20) — 1,850 Items</text>
+            <text x="490" y="51" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">$2,340,000</text>
+
+            <rect x="0" y="64" width="598" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="14" y="83" font-family="Poppins, sans-serif" font-size="11" font-weight="500" fill="#334155">• Quarantine &amp; Inspection Bay — 80 Units Pending QA</text>
+            <text x="502" y="83" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#ea580c">$145,000</text>
+          </g>
+        </g>
+
+        <!-- Child 2: WH-02 -->
+        <g transform="translate(20, 182)">
+          <rect x="0" y="0" width="622" height="32" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">▼ WH-02: West Coast Regional Logistics Hub</text>
+          <text x="500" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">$1,224,400.00</text>
+
+          <!-- Sub-locations WH-02 -->
+          <g transform="translate(24, 38)">
+            <rect x="0" y="0" width="598" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="14" y="19" font-family="Poppins, sans-serif" font-size="11" font-weight="500" fill="#334155">• E-Commerce Express Buffer (Aisles E-1 to E-6) — 940 Items</text>
+            <text x="502" y="19" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">$680,000</text>
+
+            <rect x="0" y="32" width="598" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="14" y="51" font-family="Poppins, sans-serif" font-size="11" font-weight="500" fill="#334155">• Bulk Staging &amp; Heavy Pallet Area — 420 Pallets</text>
+            <text x="502" y="51" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">$544,400</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Card: Perpetual Inventory GL Posting Engine -->
+    <g transform="translate(714, 0)">
+      <rect x="0" y="0" width="502" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow2)"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Perpetual Inventory Ledger Postings</text>
+        <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Automatic double-entry synchronization with Finance</text>
+
+        <!-- GL Transaction Card -->
+        <g transform="translate(0, 48)">
+          <rect x="0" y="0" width="462" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          
+          <g transform="translate(16, 16)">
+            <text x="0" y="12" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">VOUCHER: <tspan fill="#0066cc">PR-2025-00198 (Goods Receipt Note)</tspan></text>
+            <text x="0" y="32" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Linked Warehouse: WH-01 Finished Goods Depot</text>
+
+            <line x1="0" y1="44" x2="430" y2="44" stroke="#e2e8f0" stroke-width="1"/>
+
+            <!-- GL Line 1 -->
+            <text x="0" y="66" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">1310 - Stock In Hand (Asset)</text>
+            <text x="290" y="66" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">Dr $45,000.00</text>
+
+            <!-- GL Line 2 -->
+            <text x="0" y="94" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">2120 - Stock Received But Not Billed</text>
+            <text x="290" y="94" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0066cc">Cr $45,000.00</text>
+
+            <line x1="0" y1="106" x2="430" y2="106" stroke="#e2e8f0" stroke-width="1"/>
+            <text x="0" y="122" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">✓ Net Ledger Balance: $0.00 (Balanced Real-Time)</text>
+          </g>
+        </g>
+
+        <!-- Account Mapping Box -->
+        <g transform="translate(0, 212)">
+          <rect x="0" y="0" width="462" height="80" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <g transform="translate(16, 16)">
+            <text x="0" y="12" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">DEFAULT VALUATION ACCOUNT</text>
+            <text x="0" y="32" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Current Assets &gt; Inventory &gt; WH-01 Ledger</text>
+            <text x="0" y="52" font-family="Poppins, sans-serif" font-size="11" fill="#059669">● Auto-syncs on Purchase Receipts &amp; Delivery Notes</text>
+          </g>
+        </g>
+
+        <!-- Bottom Accent Alert -->
+        <g transform="translate(0, 304)">
+          <rect x="0" y="0" width="462" height="56" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+          <text x="16" y="24" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">PERPETUAL INVENTORY AUTOMATION</text>
+          <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#334155">Eliminate month-end inventory adjustments with instant balance sheet updates.</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

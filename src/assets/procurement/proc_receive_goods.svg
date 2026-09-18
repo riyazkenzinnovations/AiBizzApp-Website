@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#00a3ff"/>
+    </linearGradient>
+    <filter id="shadow3" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad3)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1280" height="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(28, 14)">
+    <path d="M4 32 L28 4 L28 32 Z" fill="url(#logoGrad3)"/>
+    <circle cx="28" cy="10" r="4.5" fill="#38bdf8"/>
+    <circle cx="34" cy="18" r="3.5" fill="#0284c7"/>
+    <circle cx="32" cy="26" r="3" fill="#0ea5e9"/>
+    <text x="44" y="24" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="156" y="24" font-family="Poppins, sans-serif" font-size="15" font-weight="500" fill="#64748b">| Buying &amp; Procurement</text>
+  </g>
+
+  <!-- User & Actions -->
+  <g transform="translate(1040, 16)">
+    <rect width="90" height="32" rx="6" fill="#f1f5f9"/>
+    <text x="14" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569">Stock Ledger</text>
+    <rect x="100" y="0" width="110" height="32" rx="6" fill="#0066cc"/>
+    <text x="114" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ New Receipt</text>
+  </g>
+
+  <!-- Page Title & Subtitle -->
+  <g transform="translate(36, 92)">
+    <text x="0" y="24" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Goods Receipt &amp; Warehouse Inwarding (GRN)</text>
+    <text x="0" y="46" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">Verify deliveries against Purchase Orders, conduct Quality Checks, and store items into destination warehouses.</text>
+  </g>
+
+  <!-- Receipt Information Panel (Header Card) -->
+  <g transform="translate(36, 156)">
+    <rect width="1208" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow3)"/>
+    
+    <!-- Receipt No -->
+    <text x="24" y="32" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-transform="uppercase">RECEIPT ID</text>
+    <text x="24" y="60" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0066cc">GRN-2024-0419</text>
+    <rect x="160" y="42" width="70" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="172" y="57" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#059669">ACCEPTED</text>
+
+    <!-- PO Reference -->
+    <text x="280" y="32" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-transform="uppercase">PO REFERENCE</text>
+    <text x="280" y="60" font-family="Poppins, sans-serif" font-size="15" font-weight="600" fill="#0f172a">PUR-ORD-2024-0091</text>
+
+    <!-- Supplier -->
+    <text x="520" y="32" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-transform="uppercase">SUPPLIER</text>
+    <text x="520" y="60" font-family="Poppins, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Apex Steels Ltd</text>
+
+    <!-- Inward Date -->
+    <text x="760" y="32" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-transform="uppercase">INWARDING DATE</text>
+    <text x="760" y="60" font-family="Poppins, sans-serif" font-size="15" font-weight="600" fill="#0f172a">18 Nov 2024, 10:30 AM</text>
+
+    <!-- Quality Check Status -->
+    <text x="980" y="32" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b" text-transform="uppercase">QUALITY INSPECTION</text>
+    <rect x="980" y="42" width="100" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="995" y="57" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#059669">&#10003; PASSED (QC#78)</text>
+  </g>
+
+  <!-- Items Inward Table -->
+  <g transform="translate(36, 276)">
+    <rect width="1208" height="400" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow3)"/>
+    
+    <!-- Header -->
+    <rect width="1208" height="46" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">ITEM CODE &amp; DESCRIPTION</text>
+    <text x="320" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">ACCEPTED WAREHOUSE</text>
+    <text x="560" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">ORDERED</text>
+    <text x="680" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">RECEIVED</text>
+    <text x="800" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">ACCEPTED</text>
+    <text x="920" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">REJECTED</text>
+    <text x="1050" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">VALUATION</text>
+
+    <!-- Row 1 -->
+    <line x1="0" y1="96" x2="1208" y2="96" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="74" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Raw Steel Plates 5mm</text>
+    <text x="24" y="90" font-family="Poppins, sans-serif" font-size="11" fill="#94a3b8">SKU: STL-5MM-GRA &bull; Put-away: Bin A-12</text>
+    <text x="320" y="76" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Main Raw Store - WH1</text>
+    <text x="560" y="76" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">1,500 kg</text>
+    <text x="680" y="76" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">1,500 kg</text>
+    <text x="800" y="76" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#059669">1,500 kg</text>
+    <text x="920" y="76" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">0 kg</text>
+    <text x="1050" y="76" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$8,700.00</text>
+
+    <!-- Row 2 -->
+    <line x1="0" y1="156" x2="1208" y2="156" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="134" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Cold Rolled Coil 2mm</text>
+    <text x="24" y="150" font-family="Poppins, sans-serif" font-size="11" fill="#94a3b8">SKU: CRC-2MM-COIL &bull; Put-away: Bay C-04</text>
+    <text x="320" y="136" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Main Raw Store - WH1</text>
+    <text x="560" y="136" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">800 kg</text>
+    <text x="680" y="136" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">800 kg</text>
+    <text x="800" y="136" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#059669">790 kg</text>
+    <text x="920" y="136" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#ef4444">10 kg (Bent)</text>
+    <text x="1050" y="136" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$5,431.25</text>
+
+    <!-- Row 3 -->
+    <line x1="0" y1="216" x2="1208" y2="216" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="194" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Heavy Hydraulic Fluids 200L</text>
+    <text x="24" y="210" font-family="Poppins, sans-serif" font-size="11" fill="#94a3b8">SKU: LUB-HYD-200L &bull; Put-away: Liquid Bay</text>
+    <text x="320" y="196" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Chemical &amp; Oil Store</text>
+    <text x="560" y="196" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">4 Barrels</text>
+    <text x="680" y="196" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">4 Barrels</text>
+    <text x="800" y="196" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#059669">4 Barrels</text>
+    <text x="920" y="196" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">0</text>
+    <text x="1050" y="196" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$2,240.00</text>
+
+    <!-- Bottom Stock Ledger Auto-Posting Alert -->
+    <rect y="270" width="1208" height="130" rx="0" fill="#f8fafc"/>
+    <rect x="24" y="286" width="1160" height="96" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="44" y="316" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#1e40af">&#9432; Stock Valuation &amp; Ledger Integration Note</text>
+    <text x="44" y="340" font-family="Poppins, sans-serif" font-size="12" fill="#3b82f6">Upon submission, 2,290 kg of raw materials are inwarded into Stock Ledger. Automated GL posting: Debit Inventory Stock In Hand ($16,371.25), Credit Stock Received But Not Billed ($16,371.25).</text>
+    <text x="44" y="362" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#1d4ed8">3-Way Matching Verified against PO #PUR-ORD-2024-0091.</text>
+  </g>
+</svg>

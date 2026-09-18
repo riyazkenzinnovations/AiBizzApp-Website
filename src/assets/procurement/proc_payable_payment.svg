@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="logoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#00a3ff"/>
+    </linearGradient>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad4)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1280" height="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(28, 14)">
+    <path d="M4 32 L28 4 L28 32 Z" fill="url(#logoGrad4)"/>
+    <circle cx="28" cy="10" r="4.5" fill="#38bdf8"/>
+    <circle cx="34" cy="18" r="3.5" fill="#0284c7"/>
+    <circle cx="32" cy="26" r="3" fill="#0ea5e9"/>
+    <text x="44" y="24" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="156" y="24" font-family="Poppins, sans-serif" font-size="15" font-weight="500" fill="#64748b">| Accounts Payable &amp; Payments</text>
+  </g>
+
+  <!-- User & Actions -->
+  <g transform="translate(1010, 16)">
+    <rect width="120" height="32" rx="6" fill="#f1f5f9"/>
+    <text x="14" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569">Bank Payment File</text>
+    <rect x="130" y="0" width="110" height="32" rx="6" fill="#0066cc"/>
+    <text x="142" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Process Payout</text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(36, 92)">
+    <text x="0" y="24" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Accounts Payable &amp; Supplier Payments</text>
+    <text x="0" y="46" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">Manage purchase invoices, track payment aging, and initiate automated batch disbursements.</text>
+  </g>
+
+  <!-- Aging Summary Cards -->
+  <g transform="translate(36, 156)">
+    <!-- 0-30 Days -->
+    <rect x="0" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow4)"/>
+    <text x="20" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#10b981">CURRENT (0-30 DAYS)</text>
+    <text x="20" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">$284,500</text>
+    <rect x="20" y="70" width="240" height="6" rx="3" fill="#ecfdf5"/>
+    <rect x="20" y="70" width="180" height="6" rx="3" fill="#10b981"/>
+
+    <!-- 31-60 Days -->
+    <rect x="310" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow4)"/>
+    <text x="330" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">DUE SOON (31-60 DAYS)</text>
+    <text x="330" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">$62,180</text>
+    <rect x="330" y="70" width="240" height="6" rx="3" fill="#eff6ff"/>
+    <rect x="330" y="70" width="90" height="6" rx="3" fill="#0066cc"/>
+
+    <!-- 61-90 Days -->
+    <rect x="620" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow4)"/>
+    <text x="640" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#f59e0b">OVERDUE (61-90 DAYS)</text>
+    <text x="640" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#f59e0b">$14,420</text>
+    <rect x="640" y="70" width="240" height="6" rx="3" fill="#fef3c7"/>
+    <rect x="640" y="70" width="40" height="6" rx="3" fill="#f59e0b"/>
+
+    <!-- 90+ Days -->
+    <rect x="930" y="0" width="278" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow4)"/>
+    <text x="950" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ef4444">CRITICAL (&gt;90 DAYS)</text>
+    <text x="950" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#ef4444">$0.00</text>
+    <rect x="950" y="70" width="238" height="6" rx="3" fill="#fef2f2"/>
+    <rect x="950" y="70" width="12" height="6" rx="3" fill="#10b981"/>
+  </g>
+
+  <!-- Invoices Table -->
+  <g transform="translate(36, 282)">
+    <rect width="1208" height="394" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow4)"/>
+    
+    <!-- Table Header -->
+    <rect width="1208" height="46" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">INVOICE NUMBER</text>
+    <text x="180" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">SUPPLIER</text>
+    <text x="440" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">POSTING DATE</text>
+    <text x="600" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">DUE DATE</text>
+    <text x="760" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">TOTAL AMOUNT</text>
+    <text x="940" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">3-WAY MATCH</text>
+    <text x="1100" y="28" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#475569">PAYMENT</text>
+
+    <!-- Row 1 -->
+    <line x1="0" y1="96" x2="1208" y2="96" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="74" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">PINV-2024-0312</text>
+    <text x="180" y="74" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#0f172a">Apex Steels Ltd</text>
+    <text x="440" y="74" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">18 Nov 2024</text>
+    <text x="600" y="74" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">18 Dec 2024</text>
+    <text x="760" y="74" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$16,371.25</text>
+    <rect x="940" y="58" width="90" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="952" y="73" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">&#10003; 100% Matched</text>
+    <rect x="1100" y="58" width="80" height="24" rx="6" fill="#0066cc"/>
+    <text x="1118" y="74" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Pay Now</text>
+
+    <!-- Row 2 -->
+    <line x1="0" y1="156" x2="1208" y2="156" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="134" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">PINV-2024-0311</text>
+    <text x="180" y="134" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#0f172a">Titan Metal Corp</text>
+    <text x="440" y="134" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">14 Nov 2024</text>
+    <text x="600" y="134" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">29 Nov 2024</text>
+    <text x="760" y="134" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$9,240.00</text>
+    <rect x="940" y="118" width="90" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="952" y="133" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">&#10003; 100% Matched</text>
+    <rect x="1100" y="118" width="80" height="24" rx="6" fill="#eff6ff"/>
+    <text x="1114" y="134" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">Scheduled</text>
+
+    <!-- Row 3 -->
+    <line x1="0" y1="216" x2="1208" y2="216" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="194" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">PINV-2024-0309</text>
+    <text x="180" y="194" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#0f172a">OmniChip Inc</text>
+    <text x="440" y="194" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">08 Nov 2024</text>
+    <text x="600" y="194" font-family="Poppins, sans-serif" font-size="13" fill="#ef4444">23 Nov 2024 (Due)</text>
+    <text x="760" y="194" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$14,420.00</text>
+    <rect x="940" y="178" width="90" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="952" y="193" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">&#10003; 100% Matched</text>
+    <rect x="1100" y="178" width="80" height="24" rx="6" fill="#0066cc"/>
+    <text x="1118" y="194" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Pay Now</text>
+
+    <!-- Row 4 -->
+    <line x1="0" y1="276" x2="1208" y2="276" stroke="#f1f5f9" stroke-width="1"/>
+    <text x="24" y="254" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">PINV-2024-0304</text>
+    <text x="180" y="254" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#0f172a">PrecisionTech Tools</text>
+    <text x="440" y="254" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">02 Nov 2024</text>
+    <text x="600" y="254" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">02 Dec 2024</text>
+    <text x="760" y="254" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$4,850.00</text>
+    <rect x="940" y="238" width="90" height="22" rx="11" fill="#f1f5f9"/>
+    <text x="956" y="253" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">&#10003; Paid Full</text>
+    <text x="1100" y="254" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">Settled</text>
+  </g>
+</svg>

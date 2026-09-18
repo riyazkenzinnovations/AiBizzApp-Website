@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow8" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad8)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad8)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Stock</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Filter dates, items, warehouses... (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Item Master</text>
+    <text x="210" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Warehouses</text>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Replenishment</text>
+    <text x="440" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Stock Ledger</text>
+    <text x="560" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Stock Reports &amp; Aging</text>
+    <line x1="558" y1="14" x2="728" y2="14" stroke="#0066cc" stroke-width="2"/>
+  </g>
+
+  <!-- Breadcrumb & Header Title -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Stock &gt; Analytics &gt; <tspan fill="#0066cc">Aging &amp; Ledger Reports</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Stock Aging Analysis &amp; Multi-Warehouse Stock Ledger</text>
+    
+    <rect x="580" y="26" width="138" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="594" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• Real-Time Ledger</text>
+
+    <rect x="728" y="26" width="138" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="742" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">• FIFO Valuation Sync</text>
+
+    <rect x="1080" y="20" width="136" height="32" rx="6" fill="#0066cc"/>
+    <text x="1102" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Export PDF / Excel</text>
+  </g>
+
+  <!-- Top KPI Metrics Banner -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow8)"/>
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">PORTFOLIO VALUATION</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">$4,829,400.00</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">● Balanced with General Ledger</text>
+
+      <text x="320" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">FAST MOVING (&lt; 30 DAYS)</text>
+      <text x="320" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#059669">68.4% ($3.31M)</text>
+      <text x="320" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Healthy High Turnover Stock</text>
+
+      <text x="620" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">SLOW MOVING (&gt; 60 DAYS)</text>
+      <text x="620" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#ea580c">14.2% ($685K)</text>
+      <text x="620" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Targeted for Clearance Promotions</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">INVENTORY TURNOVER RATIO</text>
+      <text x="940" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0f172a">8.4x / Year</text>
+      <text x="940" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">+1.2x vs Prior Fiscal Year</text>
+    </g>
+  </g>
+
+  <!-- Main Content Layout (Split Cards) -->
+  <g transform="translate(32, 286)">
+    <!-- Left Card: Stock Aging Analysis -->
+    <rect x="0" y="0" width="770" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow8)"/>
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Stock Aging Analysis by Product Category</text>
+      <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Identify slow and fast-moving items to optimize capital and warehouse rack placement</text>
+
+      <!-- Table Header -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="722" height="32" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="16" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ITEM CATEGORY</text>
+        <text x="220" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">0-30 DAYS</text>
+        <text x="330" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">31-60 DAYS</text>
+        <text x="440" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">61-90 DAYS</text>
+        <text x="550" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">&gt; 90 DAYS</text>
+        <text x="640" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">TURNOVER</text>
+
+        <!-- Row 1 -->
+        <g transform="translate(0, 36)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Industrial Motors &amp; Actuators</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Total Value: $2,695,000</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">$1,850,000</text>
+          <text x="330" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">$620,000</text>
+          <text x="440" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ea580c">$180,000</text>
+          <text x="550" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">$45,000</text>
+          <text x="640" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="800" fill="#0066cc">9.2x</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 92)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Precision Sensors &amp; Telemetry</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Total Value: $1,357,000</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">$940,000</text>
+          <text x="330" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">$310,000</text>
+          <text x="440" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ea580c">$95,000</text>
+          <text x="550" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">$12,000</text>
+          <text x="640" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="800" fill="#0066cc">8.6x</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 148)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Power Storage Modules 48V</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Total Value: $777,400</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">$520,000</text>
+          <text x="330" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">$180,000</text>
+          <text x="440" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ea580c">$55,000</text>
+          <text x="550" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">$22,400</text>
+          <text x="640" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="800" fill="#0066cc">7.4x</text>
+        </g>
+      </g>
+
+      <!-- Bottom Status Note -->
+      <g transform="translate(0, 304)">
+        <rect x="0" y="0" width="722" height="56" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+        <text x="16" y="24" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">STRATEGIC INVENTORY PLACEMENT</text>
+        <text x="16" y="44" font-family="Poppins, sans-serif" font-size="12" fill="#334155">Stock Aging automatically suggests repositioning items with &gt; 60 days dwell time to optimize warehouse footprint.</text>
+      </g>
+    </g>
+
+    <!-- Right Card: Real-Time Stock Ledger Stream -->
+    <g transform="translate(794, 0)">
+      <rect x="0" y="0" width="422" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow8)"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Stock Ledger Time Machine</text>
+        <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Real-time valuation and quantity audit log</text>
+
+        <!-- Transaction 1 -->
+        <g transform="translate(0, 50)">
+          <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">DN-2025-00412 (Delivery Note)</text>
+          <text x="280" y="22" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Today 14:22</text>
+          <text x="16" y="42" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-01 Finished Goods Depot</text>
+          <text x="16" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">-24 Nos</text>
+          <text x="160" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Bal: 324 Nos ($145.8K)</text>
+        </g>
+
+        <!-- Transaction 2 -->
+        <g transform="translate(0, 134)">
+          <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#059669">PR-2025-00198 (Goods Receipt)</text>
+          <text x="280" y="22" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Today 11:05</text>
+          <text x="16" y="42" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-02 West Logistics Hub</text>
+          <text x="16" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">+100 Nos</text>
+          <text x="160" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Bal: 144 Nos ($64.8K)</text>
+        </g>
+
+        <!-- Transaction 3 -->
+        <g transform="translate(0, 218)">
+          <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0f172a">STE-2025-00088 (Stock Transfer)</text>
+          <text x="280" y="22" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">Yesterday</text>
+          <text x="16" y="42" font-family="Poppins, sans-serif" font-size="12" fill="#334155">WH-01 Central &gt; WH-02 West</text>
+          <text x="16" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0066cc">50 Nos Moved</text>
+          <text x="160" y="62" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Net Valuation: Neutral</text>
+        </g>
+
+        <!-- Bottom Pill -->
+        <g transform="translate(0, 310)">
+          <rect x="0" y="0" width="382" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="30" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">✓ 100% AUDITABLE STOCK LEDGER</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

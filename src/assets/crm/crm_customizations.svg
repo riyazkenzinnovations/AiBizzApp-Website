@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradC2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGradC2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadowC2" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGradC2)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGradC2)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Framework Studio</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search schema, doctypes or scripts</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <path d="M37 12 C37 10 43 10 43 12 L45 18 L35 18 Z" fill="#64748b"/>
+    <circle cx="44" cy="9" r="3.5" fill="#ef4444"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">NP</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">DocTypes</text>
+    <text x="86" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Form Customizer</text>
+    <line x1="84" y1="14" x2="204" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="224" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Workflow Builder</text>
+    <text x="350" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Client Scripts</text>
+    <text x="450" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Print Designer</text>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Customization &gt; Customize Form &gt; <tspan fill="#0066cc">CRM Deal Schema</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">No-Code Schema &amp; Automation Studio</text>
+    <rect x="420" y="26" width="112" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="432" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• Changes Synced</text>
+
+    <rect x="970" y="20" width="110" height="32" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="986" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="500" fill="#475569">Live Preview</text>
+    <rect x="1090" y="20" width="126" height="32" rx="6" fill="#0066cc"/>
+    <text x="1106" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Save &amp; Publish</text>
+  </g>
+
+  <!-- Studio Split: Form Builder (Left) & Workflow Triggers (Right) -->
+  <g transform="translate(32, 180)">
+    <!-- Left: Drag-and-Drop Fields Table -->
+    <rect x="0" y="0" width="760" height="510" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadowC2)"/>
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Form Fields Schema &amp; Properties</text>
+      <text x="0" y="34" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Drag to re-order fields, configure data types, and toggle mandatory validation</text>
+    </g>
+
+    <!-- Table Header -->
+    <rect x="20" y="68" width="720" height="34" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="36" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">LABEL</text>
+    <text x="260" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">FIELD TYPE</text>
+    <text x="420" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">OPTIONS / RULES</text>
+    <text x="590" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">PROPERTIES</text>
+    <text x="680" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">ACTION</text>
+
+    <!-- Field 1 -->
+    <g transform="translate(20, 106)">
+      <line x1="0" y1="52" x2="720" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Deal Title</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">field_name: deal_title</text>
+      <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#0f172a">Data (Short Text)</text>
+      <text x="400" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Max Length: 140</text>
+      <rect x="570" y="18" width="60" height="20" rx="10" fill="#eff6ff"/>
+      <text x="580" y="32" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc">Required</text>
+      <text x="670" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">⋮⋮</text>
+    </g>
+
+    <!-- Field 2 -->
+    <g transform="translate(20, 158)">
+      <line x1="0" y1="52" x2="720" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Sales Probability</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">field_name: win_probability</text>
+      <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#0f172a">Percent (0-100)</text>
+      <text x="400" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Auto-Calculated by Stage</text>
+      <rect x="570" y="18" width="60" height="20" rx="10" fill="#f1f5f9"/>
+      <text x="582" y="32" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#475569">Read-Only</text>
+      <text x="670" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">⋮⋮</text>
+    </g>
+
+    <!-- Field 3 (Custom added) -->
+    <g transform="translate(20, 210)">
+      <line x1="0" y1="52" x2="720" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">+ Customer Industry</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">field_name: industry_vertical (Custom)</text>
+      <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#0f172a">Select (Dropdown)</text>
+      <text x="400" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">SaaS, Mfg, Retail, Healthcare</text>
+      <rect x="570" y="18" width="60" height="20" rx="10" fill="#eff6ff"/>
+      <text x="580" y="32" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc">Required</text>
+      <text x="670" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">⋮⋮</text>
+    </g>
+
+    <!-- Field 4 (Custom added) -->
+    <g transform="translate(20, 262)">
+      <line x1="0" y1="52" x2="720" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">+ Meta Ad Source Tag</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">field_name: meta_campaign_id</text>
+      <text x="240" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#0f172a">Link (Meta Campaign)</text>
+      <text x="400" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Auto-populated via Webhook</text>
+      <rect x="570" y="18" width="60" height="20" rx="10" fill="#f1f5f9"/>
+      <text x="582" y="32" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#475569">Tracked</text>
+      <text x="670" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">⋮⋮</text>
+    </g>
+
+    <!-- Bottom Add Button -->
+    <g transform="translate(20, 326)">
+      <rect x="0" y="0" width="720" height="42" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-dasharray="4"/>
+      <text x="360" y="26" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc" text-anchor="middle">+ Insert Custom Field or Child Table</text>
+    </g>
+  </g>
+
+  <!-- Right: Workflow Automation Triggers Panel -->
+  <g transform="translate(820, 180)">
+    <rect x="0" y="0" width="428" height="510" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadowC2)"/>
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Workflow Automation Triggers</text>
+      <text x="0" y="34" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Automated actions based on CRM states</text>
+    </g>
+
+    <!-- Trigger Rule 1 -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="388" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">When Deal Value &gt; $50,000</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Trigger: Stage changes to 'Negotiation'</text>
+      <rect x="16" y="60" width="356" height="34" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="26" y="82" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">Action: Alert VP Sales &amp; Require Approval</text>
+    </g>
+
+    <!-- Trigger Rule 2 -->
+    <g transform="translate(20, 196)">
+      <rect x="0" y="0" width="388" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">New Meta Lead Received</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Trigger: Inbound Webhook from Facebook/IG</text>
+      <rect x="16" y="60" width="356" height="34" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+      <text x="26" y="82" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">Action: Round-Robin Assign &amp; Send WhatsApp</text>
+    </g>
+
+    <!-- Trigger Rule 3 -->
+    <g transform="translate(20, 322)">
+      <rect x="0" y="0" width="388" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">No Contact for 5 Days</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Trigger: Last interaction timestamp</text>
+      <rect x="16" y="60" width="356" height="34" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+      <text x="26" y="82" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#ef4444">Action: Create High-Priority Follow-up Task</text>
+    </g>
+  </g>
+</svg>

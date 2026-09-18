@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow1" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bgGrad1)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <!-- AiBizzApp Logo Mark -->
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad1)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Selling</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search or type a command (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <!-- Bell -->
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <path d="M37 12 C37 10 43 10 43 12 L45 18 L35 18 Z" fill="#64748b"/>
+    <circle cx="44" cy="9" r="3.5" fill="#ef4444"/>
+
+    <!-- Settings Cog -->
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+
+    <!-- User Avatar -->
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Quotations</text>
+    <line x1="98" y1="14" x2="180" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="200" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Sales Orders</text>
+    <text x="310" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Invoices</text>
+    <text x="390" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pricing Rules</text>
+  </g>
+
+  <!-- Document Header Bar -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Selling &gt; Quotation &gt; <tspan fill="#0066cc">SAL-QTN-2025-00142</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Commercial Quotation</text>
+    <rect x="250" y="26" width="76" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="264" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">Approved</text>
+    
+    <rect x="990" y="20" width="100" height="32" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="1006" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="500" fill="#475569">Print PDF</text>
+    <rect x="1102" y="20" width="114" height="32" rx="6" fill="#0066cc"/>
+    <text x="1118" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Email Quote</text>
+  </g>
+
+  <!-- Main Quotation Document Card -->
+  <g transform="translate(32, 186)">
+    <rect x="0" y="0" width="1216" height="500" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow1)"/>
+
+    <!-- Customer & Terms Header -->
+    <g transform="translate(30, 24)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">CUSTOMER</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Apex Industrial Tech Ltd.</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Attn: Jonathan Vance • procurement@apextech.com</text>
+
+      <text x="380" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">DATE &amp; VALIDITY</text>
+      <text x="380" y="38" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#0f172a">18 Sep 2025</text>
+      <text x="380" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Valid for 30 Days (18 Oct 2025)</text>
+
+      <text x="700" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">PRICE LIST &amp; CURRENCY</text>
+      <text x="700" y="38" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#0f172a">USD ($) • Standard Commercial</text>
+      <text x="700" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#0066cc">Payment: Net 30 Days</text>
+
+      <text x="980" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">SALES REP</text>
+      <text x="980" y="38" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Sarah Jenkins</text>
+      <text x="980" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Direct Accounts</text>
+    </g>
+
+    <!-- Table Header -->
+    <rect x="20" y="96" width="1176" height="38" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="36" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">#</text>
+    <text x="70" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">ITEM DESCRIPTION</text>
+    <text x="560" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">QTY</text>
+    <text x="680" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">RATE</text>
+    <text x="820" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">DISCOUNT</text>
+    <text x="950" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">TAX</text>
+    <text x="1090" y="120" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">AMOUNT</text>
+
+    <!-- Line Item 1 -->
+    <g transform="translate(20, 136)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">1</text>
+      <text x="50" y="22" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">AiBizz Cloud Server Gateway X400</text>
+      <text x="50" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SKU: SRV-X400 • Edge compute unit with redundant PSU</text>
+      <text x="540" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">10 Nos</text>
+      <text x="660" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">$2,450.00</text>
+      <text x="800" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#059669">5.0%</text>
+      <text x="930" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#475569">8% GST</text>
+      <text x="1070" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$23,275.00</text>
+    </g>
+
+    <!-- Line Item 2 -->
+    <g transform="translate(20, 188)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">2</text>
+      <text x="50" y="22" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Enterprise Core AI License Pack (1 Year)</text>
+      <text x="50" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SKU: LIC-ENT-01 • Multi-tenant unlimited user subscription</text>
+      <text x="540" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">1 Year</text>
+      <text x="660" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">$8,200.00</text>
+      <text x="800" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#059669">10.0%</text>
+      <text x="930" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#475569">8% GST</text>
+      <text x="1070" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$7,380.00</text>
+    </g>
+
+    <!-- Line Item 3 -->
+    <g transform="translate(20, 240)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">3</text>
+      <text x="50" y="22" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Deployment &amp; Customization Service</text>
+      <text x="50" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SKU: SRV-IMPL • 80 hours dedicated configuration engineer</text>
+      <text x="540" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">80 Hrs</text>
+      <text x="660" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">$65.00</text>
+      <text x="800" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">0.0%</text>
+      <text x="930" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#475569">8% GST</text>
+      <text x="1070" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">$5,200.00</text>
+    </g>
+
+    <!-- Grand Total Box -->
+    <g transform="translate(800, 310)">
+      <rect x="0" y="0" width="396" height="160" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="20" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Subtotal</text>
+      <text x="320" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">$35,855.00</text>
+
+      <text x="20" y="60" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Total Discount</text>
+      <text x="320" y="60" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#059669">- $2,045.00</text>
+
+      <text x="20" y="90" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">GST (8%)</text>
+      <text x="320" y="90" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">$2,704.80</text>
+
+      <line x1="16" y1="110" x2="380" y2="110" stroke="#cbd5e1"/>
+
+      <text x="20" y="140" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0066cc">Grand Total</text>
+      <text x="280" y="140" font-family="Poppins, sans-serif" font-size="17" font-weight="800" fill="#0066cc">$36,514.80</text>
+    </g>
+
+    <!-- Notes & Action Footer -->
+    <g transform="translate(30, 330)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">TERMS &amp; REMARKS</text>
+      <text x="0" y="36" font-family="Poppins, sans-serif" font-size="12" fill="#475569">1. Delivery turnaround within 14 business days from PO signoff.</text>
+      <text x="0" y="58" font-family="Poppins, sans-serif" font-size="12" fill="#475569">2. 2 Years manufacturer replacement warranty on X400 hardware.</text>
+      <text x="0" y="80" font-family="Poppins, sans-serif" font-size="12" fill="#0066cc">✓ Click to convert to Sales Order upon customer acceptance</text>
+    </g>
+  </g>
+</svg>

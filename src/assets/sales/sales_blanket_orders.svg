@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow4" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad4)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad4)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Selling</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search or type a command (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <path d="M37 12 C37 10 43 10 43 12 L45 18 L35 18 Z" fill="#64748b"/>
+    <circle cx="44" cy="9" r="3.5" fill="#ef4444"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Quotations</text>
+    <text x="200" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Blanket Orders</text>
+    <line x1="198" y1="14" x2="294" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Invoices</text>
+    <text x="400" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Contracts</text>
+  </g>
+
+  <!-- Document Breadcrumb Header -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Selling &gt; Blanket Order &gt; <tspan fill="#0066cc">BO-2025-00019</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Master Blanket Customer Agreement</text>
+    <rect x="390" y="26" width="104" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="404" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• In Progress</text>
+
+    <rect x="990" y="20" width="226" height="32" rx="6" fill="#0066cc"/>
+    <text x="1006" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Create Order from Agreement</text>
+  </g>
+
+  <!-- Contract Summary Hero Card -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow4)"/>
+    
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">CONTRACTED CUSTOMER</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Nova Global Logistics Corp.</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Contract Reference: AG-NOV-2025-09</text>
+
+      <text x="360" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">CONTRACT TERM</text>
+      <text x="360" y="38" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#0f172a">01 Jan 2025 – 31 Dec 2025</text>
+      <text x="360" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">104 Days Remaining</text>
+
+      <text x="680" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">CONTRACT VALUE</text>
+      <text x="680" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">$250,000.00</text>
+      <text x="680" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Fixed Rate Price Lock</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">FULFILLMENT PROGRESS</text>
+      <text x="940" y="36" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">62.5% Fulfilled</text>
+      <rect x="940" y="46" width="220" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="940" y="46" width="138" height="8" rx="4" fill="url(#progressGrad)"/>
+    </g>
+  </g>
+
+  <!-- Contract Items & Linked Orders Grid -->
+  <g transform="translate(32, 286)">
+    <!-- Left: Items Quota Table -->
+    <rect x="0" y="0" width="770" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow4)"/>
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Contracted Items &amp; Remaining Quota Balances</text>
+      <text x="0" y="34" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Prices are locked and automatically applied when Sales Orders are created</text>
+    </g>
+
+    <!-- Header -->
+    <rect x="20" y="68" width="730" height="34" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="36" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">ITEM</text>
+    <text x="290" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">LOCKED RATE</text>
+    <text x="420" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">TOTAL QTY</text>
+    <text x="530" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">ORDERED</text>
+    <text x="630" y="90" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">REMAINING</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(20, 106)">
+      <line x1="0" y1="52" x2="730" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Industrial Telemetry Gateway T-90</text>
+      <text x="16" y="38" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Item Code: GW-TEL-090 • Standard: $320</text>
+      <text x="274" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">$250.00</text>
+      <text x="404" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">500 Nos</text>
+      <text x="514" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#059669">320 Nos</text>
+      <text x="614" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">180 Nos</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 158)">
+      <line x1="0" y1="52" x2="730" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Weatherproof Solar Sensor Hub</text>
+      <text x="16" y="38" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Item Code: SNS-SOL-04 • Standard: $180</text>
+      <text x="274" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">$140.00</text>
+      <text x="404" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">600 Nos</text>
+      <text x="514" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#059669">375 Nos</text>
+      <text x="614" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">225 Nos</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(20, 210)">
+      <line x1="0" y1="52" x2="730" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Extended Cloud Telemetry Tier 1</text>
+      <text x="16" y="38" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Annual software unit per device</text>
+      <text x="274" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">$45.00</text>
+      <text x="404" y="30" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">1,000 Units</text>
+      <text x="514" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#059669">600 Units</text>
+      <text x="614" y="30" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">400 Units</text>
+    </g>
+
+    <g transform="translate(20, 310)">
+      <rect x="0" y="0" width="730" height="60" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">AUTOMATED CONTRACT COMPLIANCE</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="12" fill="#475569">Orders exceeding contracted limits automatically alert account managers for renewal.</text>
+    </g>
+  </g>
+
+  <!-- Right: Linked Orders -->
+  <g transform="translate(820, 286)">
+    <rect x="0" y="0" width="428" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow4)"/>
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Linked Sales Orders</text>
+      <text x="0" y="34" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Orders drawn against this agreement</text>
+    </g>
+
+    <!-- Order 1 -->
+    <g transform="translate(20, 68)">
+      <rect x="0" y="0" width="388" height="64" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">SO-2025-00188</text>
+      <rect x="300" y="12" width="72" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="312" y="26" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Delivered</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">150 Units • $42,500 • 12 Feb</text>
+    </g>
+
+    <!-- Order 2 -->
+    <g transform="translate(20, 142)">
+      <rect x="0" y="0" width="388" height="64" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0f172a">SO-2025-00244</text>
+      <rect x="300" y="12" width="72" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="312" y="26" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Delivered</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">220 Units • $61,250 • 04 May</text>
+    </g>
+
+    <!-- Order 3 -->
+    <g transform="translate(20, 216)">
+      <rect x="0" y="0" width="388" height="64" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">SO-2025-00392</text>
+      <rect x="300" y="12" width="72" height="20" rx="10" fill="#eff6ff"/>
+      <text x="310" y="26" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc">In Transit</text>
+      <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#475569">325 Units • $52,500 • 14 Sep</text>
+    </g>
+
+    <!-- Total Invoiced snippet -->
+    <g transform="translate(20, 316)">
+      <text x="0" y="18" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">TOTAL BILLED TO DATE</text>
+      <text x="0" y="48" font-family="Poppins, sans-serif" font-size="24" font-weight="800" fill="#0f172a">$156,250.00</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow3" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad3)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad3)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Selling</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search or type a command (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <path d="M37 12 C37 10 43 10 43 12 L45 18 L35 18 Z" fill="#64748b"/>
+    <circle cx="44" cy="9" r="3.5" fill="#ef4444"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Quotations</text>
+    <text x="200" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Sales Orders</text>
+    <text x="310" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Invoices</text>
+    <text x="390" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Pricing Rules</text>
+    <line x1="388" y1="14" x2="474" y2="14" stroke="#0066cc" stroke-width="2"/>
+  </g>
+
+  <!-- Page Header -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Selling &gt; Pricing Rules &gt; <tspan fill="#0066cc">Volume Tiered Discount Engine</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Automated Pricing Rules &amp; Tiered Discounts</text>
+    <rect x="520" y="26" width="100" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="532" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• Active (Auto)</text>
+
+    <rect x="1066" y="20" width="150" height="32" rx="6" fill="#0066cc"/>
+    <text x="1080" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Add Pricing Rule</text>
+  </g>
+
+  <!-- Top Metric KPI Cards -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="286" height="84" rx="8" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow3)"/>
+    <text x="18" y="26" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ACTIVE PRICING RULES</text>
+    <text x="18" y="56" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">18 Rules</text>
+    <rect x="186" y="16" width="82" height="20" rx="10" fill="#eff6ff"/>
+    <text x="198" y="30" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc">Auto-Apply</text>
+
+    <rect x="310" y="0" width="286" height="84" rx="8" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow3)"/>
+    <text x="328" y="26" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AVG DISCOUNT GIVEN</text>
+    <text x="328" y="56" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#059669">7.4%</text>
+    <text x="420" y="56" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Across 420 orders</text>
+
+    <rect x="620" y="0" width="286" height="84" rx="8" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow3)"/>
+    <text x="638" y="26" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">MARGIN PROTECTION</text>
+    <text x="638" y="56" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0066cc">Min 22%</text>
+    <text x="756" y="56" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Floor Enforced</text>
+
+    <rect x="930" y="0" width="286" height="84" rx="8" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow3)"/>
+    <text x="948" y="26" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">CUSTOMER TIERS</text>
+    <text x="948" y="56" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">4 Groups</text>
+    <text x="1066" y="56" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Wholesale, VIP, Ret</text>
+  </g>
+
+  <!-- Rules Table Card -->
+  <g transform="translate(32, 280)">
+    <rect x="0" y="0" width="1216" height="410" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow3)"/>
+    
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Active Rule Definitions &amp; Volume Discount Brackets</text>
+      <text x="0" y="34" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Rules execute automatically when items match customer group, item category, and order quantity</text>
+    </g>
+
+    <!-- Header -->
+    <rect x="20" y="68" width="1176" height="36" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="36" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">RULE NAME</text>
+    <text x="280" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">CUSTOMER GROUP</text>
+    <text x="480" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">QTY BRACKET</text>
+    <text x="660" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">DISCOUNT TYPE</text>
+    <text x="840" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">RATE / PERCENT</text>
+    <text x="1010" y="91" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569">STATUS</text>
+
+    <!-- Row 1 -->
+    <g transform="translate(20, 104)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Bulk Volume Wholesale Tier 1</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">PR-VOL-001 • Priority 1</text>
+      <text x="260" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Wholesale Channel</text>
+      <text x="460" y="28" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">10 – 49 Units</text>
+      <text x="640" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#475569">Percentage on Net</text>
+      <text x="820" y="28" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#059669">5.0% OFF</text>
+      <rect x="990" y="16" width="60" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="1002" y="30" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Active</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 156)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Bulk Volume Wholesale Tier 2</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">PR-VOL-002 • Priority 1</text>
+      <text x="260" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Wholesale Channel</text>
+      <text x="460" y="28" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">50 – 199 Units</text>
+      <text x="640" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#475569">Percentage on Net</text>
+      <text x="820" y="28" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#059669">10.0% OFF</text>
+      <rect x="990" y="16" width="60" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="1002" y="30" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Active</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(20, 208)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Enterprise Mega Volume Tier 3</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">PR-VOL-003 • Priority 2</text>
+      <text x="260" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Enterprise &amp; Key Accounts</text>
+      <text x="460" y="28" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">200+ Units</text>
+      <text x="640" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#475569">Percentage on Net</text>
+      <text x="820" y="28" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#059669">15.0% OFF</text>
+      <rect x="990" y="16" width="60" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="1002" y="30" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Active</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(20, 260)">
+      <line x1="0" y1="52" x2="1176" y2="52" stroke="#f1f5f9"/>
+      <text x="16" y="24" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Annual Contract Preferred Rate</text>
+      <text x="16" y="40" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">PR-CTR-098 • Fixed Rate Lock</text>
+      <text x="260" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#0f172a">Contract Customers</text>
+      <text x="460" y="28" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0066cc">Min 1 Unit</text>
+      <text x="640" y="28" font-family="Poppins, sans-serif" font-size="13" fill="#475569">Fixed Item Price</text>
+      <text x="820" y="28" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0066cc">$1,850.00 Fixed</text>
+      <rect x="990" y="16" width="60" height="20" rx="10" fill="#ecfdf5"/>
+      <text x="1002" y="30" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">Active</text>
+    </g>
+
+    <!-- Footer Summary -->
+    <g transform="translate(20, 336)">
+      <rect x="0" y="0" width="1176" height="50" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="20" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">AUTOMATIC RULE ENGINE:</text>
+      <text x="186" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#475569">When multiple rules match, AiBizzApp applies the highest priority tier while strictly enforcing margin floor thresholds.</text>
+    </g>
+  </g>
+</svg>

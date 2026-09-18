@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow5" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad5)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad5)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Stock</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search reconciliation records... (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Item Master</text>
+    <text x="210" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Warehouses</text>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Replenishment</text>
+    <text x="440" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Reconciliation</text>
+    <line x1="438" y1="14" x2="540" y2="14" stroke="#0066cc" stroke-width="2"/>
+    <text x="570" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pick Lists</text>
+  </g>
+
+  <!-- Breadcrumb & Header Title -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Stock &gt; Physical Audit &gt; <tspan fill="#0066cc">REC-2025-00104</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Reconcile Inventory Levels for Physical &amp; Financial Accuracy</text>
+    
+    <rect x="620" y="26" width="118" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="634" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• Cycle Count Q3</text>
+
+    <rect x="746" y="26" width="128" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="760" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">• Posted to GL</text>
+
+    <rect x="1080" y="20" width="136" height="32" rx="6" fill="#0066cc"/>
+    <text x="1098" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Submit Audit</text>
+  </g>
+
+  <!-- Top KPI Metrics Banner -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow5)"/>
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">TOTAL AUDITED SKUs</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">540 Items</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">● Cycle Audit 100% Complete</text>
+
+      <text x="320" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">COUNT MATCH ACCURACY</text>
+      <text x="320" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#059669">99.4% Match</text>
+      <text x="320" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">537 Exact SKUs Aligned</text>
+
+      <text x="620" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">NET VALUATION VARIANCE</text>
+      <text x="620" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">+$1,240.00</text>
+      <text x="620" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Minor Net Surplus (0.02%)</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">LEDGER POSTING STATUS</text>
+      <text x="940" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Synchronized</text>
+      <text x="940" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Stock Adjustment Account Updated</text>
+    </g>
+  </g>
+
+  <!-- Main Content Layout (Split Cards) -->
+  <g transform="translate(32, 286)">
+    <!-- Left Card: Stock Reconciliation Discrepancy Table -->
+    <rect x="0" y="0" width="770" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow5)"/>
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Physical Count Variance Log</text>
+      <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Course-correcting system stock balance against barcode verified physical counts</text>
+
+      <!-- Table Header -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="722" height="32" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="16" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ITEM DESCRIPTION</text>
+        <text x="210" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">SYSTEM</text>
+        <text x="290" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">PHYSICAL</text>
+        <text x="380" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">VARIANCE</text>
+        <text x="470" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">VALUE IMPACT</text>
+        <text x="590" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AUDIT REASON</text>
+
+        <!-- Row 1 -->
+        <g transform="translate(0, 36)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">DC Servo Motor (2.4kW)</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">WH-01 Central Depot</text>
+          <text x="210" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">320 Nos</text>
+          <text x="290" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">324 Nos</text>
+          <text x="380" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">+4 Nos</text>
+          <text x="470" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">+$1,800.00</text>
+          <text x="590" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Unrecorded restock</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 92)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Solar Sensor Hub</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">WH-02 West Coast Hub</text>
+          <text x="210" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">380 Nos</text>
+          <text x="290" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">375 Nos</text>
+          <text x="380" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">-5 Nos</text>
+          <text x="470" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#dc2626">-$700.00</text>
+          <text x="590" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Lab test sample scrap</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 148)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Lithium Cell Pack 48V</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">WH-01 Central Depot</text>
+          <text x="210" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">120 Nos</text>
+          <text x="290" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">120 Nos</text>
+          <text x="380" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">0 Nos</text>
+          <text x="470" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">$0.00</text>
+          <rect x="590" y="18" width="86" height="20" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+          <text x="633" y="32" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669" text-anchor="middle">Exact Match ✓</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(0, 204)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Industrial Gateway I-90</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">WH-01 Central Depot</text>
+          <text x="210" y="30" font-family="Poppins, sans-serif" font-size="12" fill="#334155">180 Nos</text>
+          <text x="290" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">181 Nos</text>
+          <text x="380" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">+1 Nos</text>
+          <text x="470" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#059669">+$140.00</text>
+          <text x="590" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Demo unit returned</text>
+        </g>
+      </g>
+
+      <!-- Bottom Status Note -->
+      <g transform="translate(0, 316)">
+        <rect x="0" y="0" width="722" height="44" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+        <text x="16" y="27" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">CYCLE COUNT AUDIT: <tspan font-weight="400" fill="#334155">Stock Ledger balances adjusted and posted with single-click supervisor authorization.</tspan></text>
+      </g>
+    </g>
+
+    <!-- Right Card: Automatic Ledger Balancing -->
+    <g transform="translate(794, 0)">
+      <rect x="0" y="0" width="422" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow5)"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Valuation Ledger Entry</text>
+        <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Auto-balancing GL journal posting</text>
+
+        <!-- GL Voucher Container -->
+        <g transform="translate(0, 50)">
+          <rect x="0" y="0" width="382" height="156" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <g transform="translate(16, 16)">
+            <text x="0" y="12" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">GL VOUCHER: <tspan fill="#0066cc">JV-REC-2025-09</tspan></text>
+            <text x="0" y="32" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Type: Stock Reconciliation Adjustment</text>
+            <line x1="0" y1="44" x2="350" y2="44" stroke="#e2e8f0" stroke-width="1"/>
+
+            <!-- Entry 1 -->
+            <text x="0" y="66" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0f172a">1310 - Stock In Hand</text>
+            <text x="240" y="66" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#059669">Dr $1,240.00</text>
+
+            <!-- Entry 2 -->
+            <text x="0" y="94" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0f172a">5110 - Stock Adjustment (P&amp;L)</text>
+            <text x="240" y="94" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#0066cc">Cr $1,240.00</text>
+
+            <line x1="0" y1="108" x2="350" y2="108" stroke="#e2e8f0" stroke-width="1"/>
+            <text x="0" y="126" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#059669">✓ Balance Diff: $0.00 (Perfect Equilibrium)</text>
+          </g>
+        </g>
+
+        <!-- Audit Note Box -->
+        <g transform="translate(0, 222)">
+          <rect x="0" y="0" width="382" height="74" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+          <g transform="translate(16, 16)">
+            <text x="0" y="12" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AUDIT COMPLIANCE LOCK</text>
+            <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Permanent immutable audit trail</text>
+            <text x="0" y="48" font-family="Poppins, sans-serif" font-size="10" fill="#059669">● Verified by Chief Warehouse Controller</text>
+          </g>
+        </g>
+
+        <!-- Bottom Pill -->
+        <g transform="translate(0, 310)">
+          <rect x="0" y="0" width="382" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="30" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">ZERO RECONCILIATION DELAY: Ready for FY closing</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

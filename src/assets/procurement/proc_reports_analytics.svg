@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="logoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#00a3ff"/>
+    </linearGradient>
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow5" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad5)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1280" height="64" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(28, 14)">
+    <path d="M4 32 L28 4 L28 32 Z" fill="url(#logoGrad5)"/>
+    <circle cx="28" cy="10" r="4.5" fill="#38bdf8"/>
+    <circle cx="34" cy="18" r="3.5" fill="#0284c7"/>
+    <circle cx="32" cy="26" r="3" fill="#0ea5e9"/>
+    <text x="44" y="24" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="156" y="24" font-family="Poppins, sans-serif" font-size="15" font-weight="500" fill="#64748b">| Procurement Analytics</text>
+  </g>
+
+  <!-- Title & Controls -->
+  <g transform="translate(36, 92)">
+    <text x="0" y="24" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Procurement Analytics &amp; Spend Intelligence</text>
+    <text x="0" y="46" font-family="Poppins, sans-serif" font-size="13" fill="#64748b">Track purchasing trends across item categories, analyze vendor performance, and control budgets in real-time.</text>
+    
+    <rect x="920" y="4" width="130" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="936" y="27" font-family="Poppins, sans-serif" font-size="13" fill="#334155">FY 2024 (YTD) &or;</text>
+    <rect x="1066" y="4" width="142" height="36" rx="8" fill="#0066cc"/>
+    <text x="1084" y="27" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Download Report</text>
+  </g>
+
+  <!-- Metric KPI Cards -->
+  <g transform="translate(36, 156)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="20" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">TOTAL PROCUREMENT SPEND</text>
+    <text x="20" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">$1.84M</text>
+    <rect x="190" y="16" width="70" height="22" rx="11" fill="#eff6ff"/>
+    <text x="202" y="31" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">&minus;4.2% YoY</text>
+
+    <!-- KPI 2 -->
+    <rect x="310" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="330" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">PURCHASE ORDERS ISSUED</text>
+    <text x="330" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">426 POs</text>
+    <rect x="500" y="16" width="70" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="512" y="31" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#10b981">98% In Time</text>
+
+    <!-- KPI 3 -->
+    <rect x="620" y="0" width="280" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="640" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">COST SAVINGS ACHIEVED</text>
+    <text x="640" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#10b981">$142,800</text>
+    <rect x="800" y="16" width="80" height="22" rx="11" fill="#ecfdf5"/>
+    <text x="814" y="31" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">Negotiations</text>
+
+    <!-- KPI 4 -->
+    <rect x="930" y="0" width="278" height="96" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="950" y="26" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#64748b">ON-TIME IN FULL (OTIF)</text>
+    <text x="950" y="58" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#0f172a">96.4%</text>
+    <rect x="1110" y="16" width="78" height="22" rx="11" fill="#eff6ff"/>
+    <text x="1122" y="31" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">Grade A</text>
+  </g>
+
+  <!-- Charts Row -->
+  <g transform="translate(36, 276)">
+    <!-- Chart 1: Monthly Spend by Department -->
+    <rect x="0" y="0" width="680" height="400" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="24" y="32" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Monthly Procurement Spend vs. Budget</text>
+    <text x="24" y="52" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Comparison across Manufacturing, Stores &amp; Operations</text>
+    
+    <!-- Legend -->
+    <rect x="440" y="26" width="12" height="12" rx="3" fill="#0284c7"/>
+    <text x="458" y="36" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Actual Spend</text>
+    <rect x="560" y="26" width="12" height="12" rx="3" fill="#94a3b8"/>
+    <text x="578" y="36" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Budget Limit</text>
+
+    <!-- Bar Chart Graphic -->
+    <g transform="translate(30, 80)">
+      <!-- Grid lines -->
+      <line x1="40" y1="240" x2="620" y2="240" stroke="#e2e8f0" stroke-width="1"/>
+      <line x1="40" y1="180" x2="620" y2="180" stroke="#f1f5f9" stroke-width="1"/>
+      <line x1="40" y1="120" x2="620" y2="120" stroke="#f1f5f9" stroke-width="1"/>
+      <line x1="40" y1="60" x2="620" y2="60" stroke="#f1f5f9" stroke-width="1"/>
+      
+      <text x="10" y="244" font-family="Poppins, sans-serif" font-size="10" fill="#94a3b8">$0</text>
+      <text x="6" y="184" font-family="Poppins, sans-serif" font-size="10" fill="#94a3b8">$100k</text>
+      <text x="6" y="124" font-family="Poppins, sans-serif" font-size="10" fill="#94a3b8">$200k</text>
+      <text x="6" y="64" font-family="Poppins, sans-serif" font-size="10" fill="#94a3b8">$300k</text>
+
+      <!-- Month 1: Jun -->
+      <rect x="60" y="90" width="28" height="150" rx="4" fill="url(#barGrad1)"/>
+      <rect x="92" y="70" width="16" height="170" rx="3" fill="#cbd5e1"/>
+      <text x="70" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Jun</text>
+
+      <!-- Month 2: Jul -->
+      <rect x="150" y="70" width="28" height="170" rx="4" fill="url(#barGrad1)"/>
+      <rect x="182" y="60" width="16" height="180" rx="3" fill="#cbd5e1"/>
+      <text x="160" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Jul</text>
+
+      <!-- Month 3: Aug -->
+      <rect x="240" y="110" width="28" height="130" rx="4" fill="url(#barGrad1)"/>
+      <rect x="272" y="80" width="16" height="160" rx="3" fill="#cbd5e1"/>
+      <text x="250" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Aug</text>
+
+      <!-- Month 4: Sep -->
+      <rect x="330" y="50" width="28" height="190" rx="4" fill="url(#barGrad1)"/>
+      <rect x="362" y="40" width="16" height="200" rx="3" fill="#cbd5e1"/>
+      <text x="340" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Sep</text>
+
+      <!-- Month 5: Oct -->
+      <rect x="420" y="80" width="28" height="160" rx="4" fill="url(#barGrad1)"/>
+      <rect x="452" y="60" width="16" height="180" rx="3" fill="#cbd5e1"/>
+      <text x="430" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Oct</text>
+
+      <!-- Month 6: Nov -->
+      <rect x="510" y="100" width="28" height="140" rx="4" fill="url(#barGrad1)"/>
+      <rect x="542" y="60" width="16" height="180" rx="3" fill="#cbd5e1"/>
+      <text x="520" y="260" font-family="Poppins, sans-serif" font-size="11" fill="#475569">Nov</text>
+    </g>
+
+    <!-- Chart 2: Top Suppliers & Categories -->
+    <rect x="710" y="0" width="498" height="400" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow5)"/>
+    <text x="734" y="32" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Top Suppliers by Volume</text>
+    <text x="734" y="52" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Performance score and fulfillment rate</text>
+
+    <!-- Supplier 1 -->
+    <g transform="translate(734, 80)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Apex Steels Ltd</text>
+      <text x="320" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">$640,000</text>
+      <rect y="26" width="380" height="8" rx="4" fill="#f1f5f9"/>
+      <rect y="26" width="310" height="8" rx="4" fill="#0066cc"/>
+      <text x="400" y="34" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#10b981">99% OTIF</text>
+    </g>
+
+    <!-- Supplier 2 -->
+    <g transform="translate(734, 144)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Titan Metal Corp</text>
+      <text x="320" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">$480,000</text>
+      <rect y="26" width="380" height="8" rx="4" fill="#f1f5f9"/>
+      <rect y="26" width="240" height="8" rx="4" fill="#38bdf8"/>
+      <text x="400" y="34" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#10b981">97% OTIF</text>
+    </g>
+
+    <!-- Supplier 3 -->
+    <g transform="translate(734, 208)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">OmniChip Inc</text>
+      <text x="320" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">$320,000</text>
+      <rect y="26" width="380" height="8" rx="4" fill="#f1f5f9"/>
+      <rect y="26" width="160" height="8" rx="4" fill="#60a5fa"/>
+      <text x="400" y="34" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#10b981">95% OTIF</text>
+    </g>
+
+    <!-- Supplier 4 -->
+    <g transform="translate(734, 272)">
+      <text x="0" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0f172a">LubriMax PetroSyn</text>
+      <text x="320" y="16" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">$195,000</text>
+      <rect y="26" width="380" height="8" rx="4" fill="#f1f5f9"/>
+      <rect y="26" width="110" height="8" rx="4" fill="#93c5fd"/>
+      <text x="400" y="34" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#10b981">98% OTIF</text>
+    </g>
+  </g>
+</svg>

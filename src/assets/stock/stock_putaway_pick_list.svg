@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="logoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="cardShadow6" x="-2%" y="-2%" width="104%" height="104%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad6)"/>
+
+  <!-- Top App Navbar -->
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(24, 12)">
+    <circle cx="18" cy="18" r="18" fill="url(#logoGrad6)"/>
+    <text x="18" y="23" font-family="Poppins, sans-serif" font-size="13" font-weight="800" fill="#ffffff" text-anchor="middle">Ai</text>
+    <text x="44" y="23" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">AiBizzApp</text>
+    <text x="142" y="23" font-family="Poppins, sans-serif" font-size="16" font-weight="500" fill="#334155">Stock</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(680, 12)">
+    <rect x="0" y="0" width="340" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="18" r="6" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="30" y2="28" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="38" y="23" font-family="Poppins, sans-serif" font-size="12" fill="#94a3b8">Search pick lists, putaway rules... (Ctrl + K)</text>
+  </g>
+
+  <!-- Top Right Controls -->
+  <g transform="translate(1060, 14)">
+    <circle cx="40" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="80" cy="16" r="4" stroke="#64748b" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="16" r="15" fill="#e2e8f0"/>
+    <text x="120" y="21" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">SJ</text>
+  </g>
+
+  <!-- Secondary Navigation Sub-bar -->
+  <rect x="0" y="60" width="1280" height="42" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <g transform="translate(32, 86)">
+    <text x="0" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Dashboard</text>
+    <text x="100" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Item Master</text>
+    <text x="210" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Warehouses</text>
+    <text x="320" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Replenishment</text>
+    <text x="440" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="500" fill="#64748b">Reconciliation</text>
+    <text x="560" y="0" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#0066cc">Putaway &amp; Pick</text>
+    <line x1="558" y1="14" x2="674" y2="14" stroke="#0066cc" stroke-width="2"/>
+  </g>
+
+  <!-- Breadcrumb & Header Title -->
+  <g transform="translate(32, 122)">
+    <text x="0" y="16" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Stock &gt; Warehouse Ops &gt; <tspan fill="#0066cc">PL-2025-0089</tspan></text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Putaway Strategy &amp; Smart Wave Pick Lists</text>
+    
+    <rect x="490" y="26" width="124" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="504" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#059669">• Shortest Routing</text>
+
+    <rect x="622" y="26" width="138" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="636" y="42" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">• Barcode Scan Lock</text>
+
+    <rect x="1080" y="20" width="136" height="32" rx="6" fill="#0066cc"/>
+    <text x="1102" y="41" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Create Pick List</text>
+  </g>
+
+  <!-- Top KPI Metrics Banner -->
+  <g transform="translate(32, 178)">
+    <rect x="0" y="0" width="1216" height="92" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow6)"/>
+    <g transform="translate(28, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ACTIVE PICK WAVES</text>
+      <text x="0" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">8 Wave Batches</text>
+      <text x="0" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">● Assigned to Warehouse Crew</text>
+
+      <text x="320" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">AVG PICK TIME PER ORDER</text>
+      <text x="320" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#0066cc">4.2 Minutes</text>
+      <text x="320" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">45% Faster than Manual Routing</text>
+
+      <text x="620" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">BIN CAPACITY UTILIZATION</text>
+      <text x="620" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="#0f172a">88.6% Optimized</text>
+      <text x="620" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Dynamic Putaway Auto-Assignment</text>
+
+      <text x="940" y="14" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">PICK &amp; PACK ACCURACY</text>
+      <text x="940" y="38" font-family="Poppins, sans-serif" font-size="18" font-weight="800" fill="#059669">99.9% Verified</text>
+      <text x="940" y="56" font-family="Poppins, sans-serif" font-size="12" fill="#059669">Mandatory Barcode Validation</text>
+    </g>
+  </g>
+
+  <!-- Main Content Layout (Split Cards) -->
+  <g transform="translate(32, 286)">
+    <!-- Left Card: Optimized Pick List Wave -->
+    <rect x="0" y="0" width="770" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow6)"/>
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Wave Pick List: PL-2025-0089 (Dispatch Staging)</text>
+      <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Sequenced by shortest warehouse travel path and rack elevation</text>
+
+      <!-- Table Header -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="722" height="32" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+        <text x="16" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">ITEM DESCRIPTION</text>
+        <text x="220" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">BIN / RACK LOCATION</text>
+        <text x="390" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">QTY TO PICK</text>
+        <text x="490" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">BARCODE SCAN</text>
+        <text x="610" y="21" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#64748b">LINKED SO</text>
+
+        <!-- Row 1 -->
+        <g transform="translate(0, 36)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">DC Servo Motor 2.4kW</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">ITM-2026-X1</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">Zone A &gt; Rack 02 &gt; Bin 14</text>
+          <text x="390" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">12 Nos</text>
+          <rect x="490" y="16" width="92" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0"/>
+          <text x="536" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#059669" text-anchor="middle">Scanned ✓</text>
+          <text x="610" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SO-2025-00188</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 92)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Solar Sensor Hub</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SNS-SOL-04</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">Zone B &gt; Rack 05 &gt; Bin 08</text>
+          <text x="390" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">24 Nos</text>
+          <rect x="490" y="16" width="92" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0"/>
+          <text x="536" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#059669" text-anchor="middle">Scanned ✓</text>
+          <text x="610" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SO-2025-00244</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 148)">
+          <rect x="0" y="0" width="722" height="52" fill="#ffffff" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Lithium Cell Pack 48V</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">BAT-48V-PRO</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">Zone C &gt; Rack 01 &gt; Bin 02</text>
+          <text x="390" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">8 Nos</text>
+          <rect x="490" y="16" width="92" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe"/>
+          <text x="536" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#0066cc" text-anchor="middle">Scanning...</text>
+          <text x="610" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SO-2025-00392</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(0, 204)">
+          <rect x="0" y="0" width="722" height="52" fill="#fcfdfe" stroke="#f1f5f9"/>
+          <text x="16" y="22" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0f172a">Fiber Transceiver SFP+</text>
+          <text x="16" y="38" font-family="Poppins, sans-serif" font-size="10" fill="#64748b">SFP-10G-LR</text>
+          <text x="220" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="600" fill="#0066cc">Zone A &gt; Rack 08 &gt; Bin 22</text>
+          <text x="390" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">50 Nos</text>
+          <rect x="490" y="16" width="92" height="22" rx="11" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="536" y="31" font-family="Poppins, sans-serif" font-size="10" font-weight="600" fill="#64748b" text-anchor="middle">Queued</text>
+          <text x="610" y="30" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">SO-2025-00411</text>
+        </g>
+      </g>
+
+      <!-- Bottom Status Note -->
+      <g transform="translate(0, 316)">
+        <rect x="0" y="0" width="722" height="44" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+        <text x="16" y="27" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">BARCODE SCAN COMPLIANCE: <tspan font-weight="400" fill="#334155">Handheld mobile scanners verify item code, serial, and bin match before packing.</tspan></text>
+      </g>
+    </g>
+
+    <!-- Right Card: Putaway Strategy Rules -->
+    <g transform="translate(794, 0)">
+      <rect x="0" y="0" width="422" height="404" rx="10" fill="#ffffff" stroke="#e2e8f0" filter="url(#cardShadow6)"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Automated Putaway Rules</text>
+        <text x="0" y="32" font-family="Poppins, sans-serif" font-size="12" fill="#64748b">Smart item placement on Goods Receipt</text>
+
+        <!-- Rule Cards Container -->
+        <g transform="translate(0, 50)">
+          <!-- Rule 1 -->
+          <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="24" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Rule 1: Fast-Moving Accessibility</text>
+          <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">High-velocity items auto-assigned to waist-level bins in Zone A.</text>
+          <text x="310" y="24" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#059669">ACTIVE</text>
+
+          <!-- Rule 2 -->
+          <g transform="translate(0, 86)">
+            <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+            <text x="16" y="24" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Rule 2: Heavy Pallet Placement</text>
+            <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Pallets &gt; 500kg auto-routed exclusively to reinforced floor bays.</text>
+            <text x="310" y="24" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#059669">ACTIVE</text>
+          </g>
+
+          <!-- Rule 3 -->
+          <g transform="translate(0, 172)">
+            <rect x="0" y="0" width="382" height="74" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+            <text x="16" y="24" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Rule 3: Climate-Controlled Storage</text>
+            <text x="16" y="44" font-family="Poppins, sans-serif" font-size="11" fill="#64748b">Lithium batteries and sensors routed to humidity-controlled Zone C.</text>
+            <text x="310" y="24" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#0066cc">STRICT</text>
+          </g>
+        </g>
+
+        <!-- KPI Box -->
+        <g transform="translate(0, 310)">
+          <rect x="0" y="0" width="382" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="16" y="30" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#0066cc">45% LESS TRAVEL TIME: Shortest warehouse picker routes</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
