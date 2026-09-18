@@ -28,7 +28,6 @@ import {
   Sprout,
   Hotel,
   Truck,
-  Pickaxe,
   Pill,
   ShoppingBag,
   ArrowRight,
@@ -91,6 +90,8 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
           icon: Factory,
           hasDropdown: true,
           children: [
+            { name: 'Retail', icon: ShoppingBag, href: '#retail' },
+            { name: 'Manufacturing', icon: Factory, href: '#manufacturing' },
             { name: 'Construction', icon: HardHat, href: '#construction' },
             { name: 'Education', icon: GraduationCap, href: '#education' },
             { name: 'Electronics', icon: Cpu, href: '#electronics' },
@@ -100,7 +101,6 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
             { name: 'Agriculture', icon: Sprout, href: '#agriculture' },
             { name: 'Hospitality', icon: Hotel, href: '#hospitality' },
             { name: 'Logistics', icon: Truck, href: '#logistics' },
-            { name: 'Mining', icon: Pickaxe, href: '#mining' },
             { name: 'Pharmaceutical', icon: Pill, href: '#pharmaceutical' }
           ]
         },
@@ -546,24 +546,13 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                 if (onNavigate) onNavigate('contact')
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
-              className={`px-2 xl:px-3.5 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base font-medium transition-all whitespace-nowrap cursor-pointer ${
+              className={`px-4 xl:px-5 py-1.5 xl:py-2 rounded-full text-sm xl:text-base font-semibold transition-all whitespace-nowrap cursor-pointer ${
                 currentPage === 'contact'
-                  ? 'text-[#0066cc] bg-blue-50 font-semibold'
-                  : 'text-slate-700 hover:text-slate-950 hover:bg-slate-100/80'
+                  ? 'text-[#0066cc] bg-[#eef4ff] border border-blue-200 shadow-xs'
+                  : 'text-[#0066cc] bg-blue-50 hover:bg-blue-100/90 border border-blue-100 shadow-xs hover:shadow'
               }`}
             >
-              <span>Contact us</span>
-            </button>
-
-            <button
-              onClick={() => {
-                if (onNavigate) onNavigate('contact')
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-              }}
-              className="inline-flex items-center gap-1.5 xl:gap-2 px-3 xl:px-5 py-1.5 xl:py-2.5 rounded-xl bg-[#0066cc] hover:bg-[#0052a3] text-white font-semibold text-sm xl:text-base transition-all shadow-md shadow-blue-600/15 hover:shadow-lg hover:shadow-blue-600/25 active:scale-95 cursor-pointer whitespace-nowrap"
-            >
               <span>Get Started</span>
-              <ArrowRight className="w-3.5 h-3.5 xl:w-4 xl:h-4" />
             </button>
           </div>
 
@@ -781,7 +770,7 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                   setMobileMenuOpen(false)
                   window.scrollTo({ top: 0, behavior: 'smooth' })
                 }}
-                className="w-full py-3 rounded-lg bg-[#0066cc] hover:bg-[#0052a3] text-white font-semibold text-sm transition-all shadow-xs active:scale-95 cursor-pointer"
+                className="w-full py-2.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#0066cc] border border-blue-200 font-semibold text-sm transition-all shadow-xs active:scale-95 cursor-pointer"
               >
                 Get Started
               </button>

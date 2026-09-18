@@ -20,7 +20,9 @@ import Quality from './components/Modules/Quality'
 import Support from './components/Modules/Support'
 import HRPayroll from './components/Modules/HRPayroll'
 import NoCodeBuilder from './components/Modules/NoCodeBuilder'
-import Manufacturing from './components/Modules/Manufacturing'
+import ModuleManufacturing from './components/Modules/Manufacturing'
+import Retail from './components/industry/Retail'
+import IndustryManufacturing from './components/industry/Manufacturing'
 import Ecommerce from './components/industry/Ecommerce'
 import Construction from './components/industry/Construction'
 import Education from './components/industry/Education'
@@ -40,6 +42,8 @@ import AppServices from './components/AppServices'
 import Footer from './components/Footer'
 
 const industryComponents = {
+  retail: Retail,
+  manufacturing: IndustryManufacturing,
   construction: Construction,
   education: Education,
   electronics: Electronics,
@@ -56,7 +60,7 @@ const industryComponents = {
 }
 
 export default function App() {
-  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'manufacturing', 'ecommerce', 'contact', 'apps']
+  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'ecommerce', 'contact', 'apps']
 
   const getPageFromHash = () => {
     const hash = window.location.hash.replace(/^#/, '').trim()
@@ -119,8 +123,8 @@ export default function App() {
         <HRPayroll onNavigate={handleNavigate} />
       ) : (currentPage === 'no-code-builder' || currentPage === 'builder') ? (
         <NoCodeBuilder onNavigate={handleNavigate} />
-      ) : currentPage === 'manufacturing' ? (
-        <Manufacturing onNavigate={handleNavigate} />
+      ) : currentPage === 'manufacturing-module' ? (
+        <ModuleManufacturing onNavigate={handleNavigate} />
       ) : currentPage === 'ecommerce' ? (
         <Ecommerce onNavigate={handleNavigate} />
       ) : currentPage === 'contact' ? (

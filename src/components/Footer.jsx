@@ -1,10 +1,9 @@
 import React from 'react'
 import {
-  Phone,
   MapPin,
-  Mail,
   Linkedin,
   Twitter,
+  Instagram,
   Youtube,
   Facebook
 } from 'lucide-react'
@@ -161,20 +160,6 @@ export default function Footer({ onNavigate }) {
             {/* Direct Contact Channels */}
             <div className="space-y-4 pt-1">
 
-              {/* Contact Number */}
-              <div className="flex items-start gap-3 text-slate-800">
-                <Phone className="w-5 h-5 text-slate-500 mt-1 shrink-0" />
-                <div className="space-y-0.5">
-                  <div className="text-sm sm:text-[15px] text-slate-500 font-medium">Contact Number</div>
-                  <a
-                    href="tel:+966539845000"
-                    className="text-lg sm:text-xl font-bold text-slate-900 hover:text-[#0066cc] tracking-tight block whitespace-nowrap transition-colors"
-                  >
-                    +966 53 984 5000
-                  </a>
-                </div>
-              </div>
-
               {/* Head Office Address */}
               <div className="flex items-start gap-3 text-slate-800">
                 <MapPin className="w-5 h-5 text-slate-500 mt-1 shrink-0" />
@@ -198,7 +183,7 @@ export default function Footer({ onNavigate }) {
               </div>
               <div className="flex items-center gap-2.5">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/135073960/admin/page-posts/published/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -208,7 +193,7 @@ export default function Footer({ onNavigate }) {
                 </a>
 
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/aibizzapp/status/2100813954281083012"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter / X"
@@ -218,7 +203,17 @@ export default function Footer({ onNavigate }) {
                 </a>
 
                 <a
-                  href="https://youtube.com"
+                  href="https://www.instagram.com/p/DdapYxlmrWi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="w-10 h-10 rounded-xl bg-white border border-slate-200 hover:border-[#0066cc] hover:bg-blue-50 text-slate-600 hover:text-[#0066cc] flex items-center justify-center transition-all shadow-xs cursor-pointer"
+                >
+                  <Instagram className="w-4.5 h-4.5" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/post/UgkxtDbOK6I8j46a3rXAuNvAL_7OmU9Ch94b"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
@@ -228,22 +223,13 @@ export default function Footer({ onNavigate }) {
                 </a>
 
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/photo/?fbid=122126629947384186&set=a.122113626879384186"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="w-10 h-10 rounded-xl bg-white border border-slate-200 hover:border-[#0066cc] hover:bg-blue-50 text-slate-600 hover:text-[#0066cc] flex items-center justify-center transition-all shadow-xs cursor-pointer"
                 >
                   <Facebook className="w-4.5 h-4.5" />
-                </a>
-
-                <a
-                  href="#contact"
-                  onClick={(e) => handleNavClick('contact', e)}
-                  aria-label="Email Contact"
-                  className="w-10 h-10 rounded-xl bg-white border border-slate-200 hover:border-[#0066cc] hover:bg-blue-50 text-slate-600 hover:text-[#0066cc] flex items-center justify-center transition-all shadow-xs cursor-pointer"
-                >
-                  <Mail className="w-4.5 h-4.5" />
                 </a>
               </div>
             </div>
@@ -340,7 +326,7 @@ export default function Footer({ onNavigate }) {
         {/* Bottom Legal Row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[15px] sm:text-base text-slate-500">
           <div>
-            © {new Date().getFullYear()} <span className="font-semibold text-slate-800">AiBizzApp Inc.</span> All rights reserved.
+            © {new Date().getFullYear()} <span className="font-semibold text-slate-800">AiBizzApp</span> All rights reserved.
           </div>
 
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2 text-[15px] sm:text-base">
