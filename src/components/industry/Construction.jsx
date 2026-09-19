@@ -14,7 +14,7 @@ import {
   Calendar
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import constructionImg from '../../assets/industry/construction.jpg'
+import constructionImg from '../../assets/industry-images/construction.jpeg'
 
 export default function Construction({ onNavigate }) {
   const challenges = [

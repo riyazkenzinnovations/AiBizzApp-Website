@@ -14,7 +14,7 @@ import {
   Sparkles
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import hospImg from '../../assets/industry/hospitality.jpg'
+import hospImg from '../../assets/industry-images/WhatsApp Image 2026-09-19 at 6.12.18 PM (2).jpeg'
 
 export default function Hospitality({ onNavigate }) {
   const challenges = [
@@ -106,9 +106,9 @@ export default function Hospitality({ onNavigate }) {
 
   return (
     <IndustryTemplate
-      badge="All-in-One Hospitality Suite"
+      badge="All-in-One Hotel Suite"
       titlePrefix="ERP Software Solutions for"
-      highlightWord="Hotels, Resorts & Restaurants"
+      highlightWord="Hotels & Resorts"
       subtitle="Front-desk reservation sync, central kitchen food costing, banquet booking billing, housekeeping tasks, and vendor purchase automation."
       trustPoints={['2-Way OTA Channel Sync', 'Live Recipe Costing', 'Single-Folio Express Checkout']}
       heroImage={hospImg}
@@ -118,10 +118,10 @@ export default function Hospitality({ onNavigate }) {
         statValue: '2 Minutes Express Checkout'
       }}
       overview={{
-        title: 'Modern Hospitality & Hotel Operations',
-        p1: 'Independent hotels, luxury resort chains, and multi-outlet restaurant groups must deliver flawless guest experiences while rigorously managing food cost margins and staff productivity.',
-        subheading: 'Seamless Hospitality Operations from Reservation to Checkout',
-        p2: 'AiBizz Hospitality ERP unites front-desk reservations, restaurant POS, kitchen inventory, banquet management, and accounting into one high-performance cloud platform.'
+        title: 'Modern Hotel & Resort Operations',
+        p1: 'Independent hotels, luxury resort chains, and multi-outlet hospitality groups must deliver flawless guest experiences while rigorously managing food cost margins and staff productivity.',
+        subheading: 'Seamless Hotel Operations from Reservation to Checkout',
+        p2: 'AiBizz Hotel ERP unites front-desk reservations, restaurant POS, kitchen inventory, banquet management, and accounting into one high-performance cloud platform.'
       }}
       challenges={challenges}
       whySolutions={whySolutions}

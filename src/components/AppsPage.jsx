@@ -42,7 +42,8 @@ const FEATURED_APPS = [
     description: "World's leading AI-powered enterprise ERP with unified accounting, supply chain, CRM, and manufacturing.",
     icon: Cpu,
     iconBg: 'bg-[#0284c7]',
-    tag: 'Core ERP'
+    tag: 'Core ERP',
+    price: 'Price: $12 Per User/Month'
   },
   {
     id: 'whatsapp',
@@ -93,9 +94,19 @@ const ECOSYSTEM_APPS = [
     name: 'AiBizzApp',
     desc: "Unified enterprise AI ERP with integrated business operations",
     category: 'Core ERP',
+    price: 'Price: $12 Per User/Month',
     iconType: 'aibizz',
     iconBg: 'bg-[#0070f3]',
     initial: 'A'
+  },
+  {
+    name: 'Telegram',
+    desc: 'Telegram Integration for AiBizzApp',
+    category: 'Communication',
+    price: 'Price: $3 Per User/Month',
+    iconType: 'telegram',
+    iconBg: 'bg-[#0088cc]',
+    icon: Send
   },
   {
     name: 'Twilio',
@@ -120,14 +131,6 @@ const ECOSYSTEM_APPS = [
     iconType: 'pdf',
     iconBg: 'bg-[#10b981]',
     icon: FileText
-  },
-  {
-    name: 'Telegram',
-    desc: 'Telegram Integration for AiBizzApp',
-    category: 'Communication',
-    iconType: 'telegram',
-    iconBg: 'bg-[#0088cc]',
-    icon: Send
   },
   {
     name: 'AiBizz Shipping',
@@ -684,7 +687,8 @@ export default function AppsPage({ onNavigate }) {
               return (
                 <div
                   key={app.id}
-                  className="bg-slate-50/60 rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md hover:bg-white hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
+                  onClick={() => setSelectedApp(app)}
+                  className="bg-slate-50/60 rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md hover:bg-white hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
@@ -706,12 +710,14 @@ export default function AppsPage({ onNavigate }) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-slate-200/60 flex items-center justify-between text-xs">
-                    <span className="inline-flex items-center gap-1.5 text-emerald-600 font-semibold text-[11px]">
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                      <span>Ready to Deploy</span>
+                    <span className="font-bold text-[#0066cc] text-xs">
+                      {app.price || 'Price: $3 Per User/Month'}
                     </span>
                     <button
-                      onClick={() => handleAction('contact')}
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        setSelectedApp(app)
+                      }}
                       className="text-[#0066cc] hover:text-[#004d99] transition-colors cursor-pointer font-bold text-[11px] inline-flex items-center gap-1"
                     >
                       <span>Request Setup</span>
@@ -763,15 +769,23 @@ export default function AppsPage({ onNavigate }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filteredApps.map((app, index) => {
               const IconComponent = app.icon
+              const hasPriceAndModal = Boolean(app.price)
+
               return (
                 <div
                   key={index}
-                  onClick={() => setSelectedApp(app)}
+                  onClick={() => {
+                    if (hasPriceAndModal) {
+                      setSelectedApp(app)
+                    } else {
+                      handleAction('contact')
+                    }
+                  }}
                   className="bg-white rounded-2xl p-5 border border-slate-200/90 hover:border-blue-400 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer group flex flex-col justify-between"
                 >
                   <div>
-                    {/* Top App Icon Badge */}
-                    <div className="mb-3.5">
+                    {/* Top App Icon Badge & Category Tag (Matches Featured Cards) */}
+                    <div className="flex items-center justify-between mb-3.5">
                       <div className={`w-11 h-11 rounded-xl ${app.iconBg} text-white flex items-center justify-center font-bold text-sm shadow-xs group-hover:scale-105 transition-transform`}>
                         {IconComponent ? (
                           <IconComponent className="w-5 h-5 text-white" />
@@ -779,6 +793,9 @@ export default function AppsPage({ onNavigate }) {
                           <span>{app.initial || app.name.charAt(0)}</span>
                         )}
                       </div>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/70">
+                        {app.category}
+                      </span>
                     </div>
 
                     {/* App Name */}
@@ -793,8 +810,14 @@ export default function AppsPage({ onNavigate }) {
                   </div>
 
                   <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400 group-hover:text-[#0066cc] transition-colors">
-                    <span className="font-medium text-slate-500">{app.category}</span>
-                    <span className="inline-flex items-center gap-1 font-semibold">
+                    {app.price ? (
+                      <span className="font-bold text-[#0066cc]">
+                        {app.price}
+                      </span>
+                    ) : (
+                      <span />
+                    )}
+                    <span className={`inline-flex items-center gap-1 font-semibold ${hasPriceAndModal ? 'text-[#0066cc]' : 'text-slate-400 group-hover:text-slate-600'}`}>
                       <span>View details</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </span>
@@ -858,19 +881,26 @@ export default function AppsPage({ onNavigate }) {
                 {selectedApp.icon ? (
                   <selectedApp.icon className="w-6 h-6 text-white" />
                 ) : (
-                  <span>{selectedApp.initial || selectedApp.name.charAt(0)}</span>
+                  <span>{selectedApp.initial || selectedApp.name?.charAt(0) || selectedApp.title?.charAt(0)}</span>
                 )}
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#0066cc] bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
-                  {selectedApp.category}
-                </span>
-                <h3 className="text-xl font-bold text-slate-900 mt-1">{selectedApp.name}</h3>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#0066cc] bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+                    {selectedApp.category || selectedApp.tag}
+                  </span>
+                  <span className="text-[10px] font-bold tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                    {selectedApp.price || 'Price: $3 Per User/Month'}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mt-1">
+                  {selectedApp.name || selectedApp.title}
+                </h3>
               </div>
             </div>
 
             <p className="text-sm text-slate-600 leading-relaxed mb-6">
-              {selectedApp.desc}
+              {selectedApp.desc || selectedApp.description}
             </p>
 
             <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 mb-6 text-xs text-slate-600 flex items-center gap-2">
@@ -879,15 +909,13 @@ export default function AppsPage({ onNavigate }) {
             </div>
 
             <div className="flex items-center gap-3">
-              <button
-                onClick={() => {
-                  setSelectedApp(null)
-                  handleAction('contact')
-                }}
-                className="flex-1 py-3 px-4 rounded-xl bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-sm text-center transition-all shadow-md active:scale-95 cursor-pointer"
+              <a
+                href="https://aibizzhub.io/register"
+                onClick={() => setSelectedApp(null)}
+                className="flex-1 py-3 px-4 rounded-xl bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-sm text-center transition-all shadow-md active:scale-95 cursor-pointer block"
               >
                 Deploy into My ERP
-              </button>
+              </a>
               <button
                 onClick={() => setSelectedApp(null)}
                 className="py-3 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-sm transition-all cursor-pointer"

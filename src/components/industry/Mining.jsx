@@ -14,7 +14,7 @@ import {
   Activity
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import miningImg from '../../assets/industry/mining.jpg'
+import miningImg from '../../assets/industry-images/WhatsApp Image 2026-09-19 at 6.12.18 PM (1).jpeg'
 
 export default function Mining({ onNavigate }) {
   const challenges = [

@@ -14,7 +14,7 @@ import {
   RotateCcw
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import pharmaImg from '../../assets/industry/pharmaceutical.jpg'
+import pharmaImg from '../../assets/industry-images/pharmaceutical.jpeg'
 
 export default function Pharmaceutical({ onNavigate }) {
   const challenges = [

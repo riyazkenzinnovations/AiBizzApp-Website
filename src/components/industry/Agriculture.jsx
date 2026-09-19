@@ -14,7 +14,7 @@ import {
   FileText
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import agriImg from '../../assets/industry/agriculture.jpg'
+import agriImg from '../../assets/industry-images/agriculture.jpeg'
 
 export default function Agriculture({ onNavigate }) {
   const challenges = [

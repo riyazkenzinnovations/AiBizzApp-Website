@@ -14,7 +14,7 @@ import {
   Briefcase
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import eduImg from '../../assets/industry/education.jpg'
+import eduImg from '../../assets/industry-images/education.jpeg'
 
 export default function Education({ onNavigate }) {
   const challenges = [

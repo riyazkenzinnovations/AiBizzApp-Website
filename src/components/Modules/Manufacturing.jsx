@@ -11,16 +11,16 @@ import {
 } from 'lucide-react'
 
 // Real manufacturing module screenshots
-import img1 from '../../assets/industry/manufacturing/media_1789477360105.png'
-import img2 from '../../assets/industry/manufacturing/media_1789477377470.png'
-import img3 from '../../assets/industry/manufacturing/media_1789477395885.png'
-import img4 from '../../assets/industry/manufacturing/media_1789477411716.png'
-import img5 from '../../assets/industry/manufacturing/media_1789477429817.png'
+import img1 from '../../assets/modules/AiBizzApp1.jpeg'
+import img2 from '../../assets/modules/AiBizzApp2.jpeg'
+import img3 from '../../assets/modules/AiBizzApp3.jpeg'
+import img4 from '../../assets/modules/AiBizzApp4.jpeg'
+import img5 from '../../assets/modules/AiBizzApp5.jpeg'
 // Stand-in screenshots for remaining sections
-import img6 from '../../assets/accounting/media_1789475334615.png'
-import img7 from '../../assets/accounting/media_1789475345323.png'
-import img8 from '../../assets/accounting/media_1789475358358.png'
-import img9 from '../../assets/accounting/media_1789475370670.png'
+import img6 from '../../assets/modules/AiBizzApp6.jpeg'
+import img7 from '../../assets/modules/AiBizzApp1.jpeg'
+import img8 from '../../assets/modules/AiBizzApp2.jpeg'
+import img9 from '../../assets/modules/AiBizzApp3.jpeg'
 
 export default function Manufacturing({ onNavigate }) {
   const tableOfContents = [

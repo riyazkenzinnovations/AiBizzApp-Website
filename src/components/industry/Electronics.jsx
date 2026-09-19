@@ -14,7 +14,7 @@ import {
   FileCheck
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import elecImg from '../../assets/industry/electronics.jpg'
+import elecImg from '../../assets/industry-images/electronics.jpeg'
 
 export default function Electronics({ onNavigate }) {
   const challenges = [

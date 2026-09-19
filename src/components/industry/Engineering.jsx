@@ -14,7 +14,7 @@ import {
   DollarSign
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import engImg from '../../assets/industry/engineering.jpg'
+import engImg from '../../assets/industry-images/engineering.jpeg'
 
 export default function Engineering({ onNavigate }) {
   const challenges = [

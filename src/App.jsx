@@ -5,7 +5,6 @@ import WhyChooseUs from './components/WhyChooseUs'
 import ERPModules from './components/ERPModules'
 import AIBusinessTiles from './components/AIBusinessTiles'
 import KeyFeatures from './components/KeyFeatures'
-import Industries from './components/Industries'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import Accounting from './components/Modules/Accounting'
@@ -37,12 +36,14 @@ import Trading from './components/industry/Trading'
 import CommoditiesTrading from './components/industry/CommoditiesTrading'
 import Mining from './components/industry/Mining'
 import Pharmaceutical from './components/industry/Pharmaceutical'
+import NonProfit from './components/industry/NonProfit'
 import Contact from './components/Contact'
 import AppServices from './components/AppServices'
 import Footer from './components/Footer'
 
 const industryComponents = {
   retail: Retail,
+  manufacturing: IndustryManufacturing,
   'industry-manufacturing': IndustryManufacturing,
   'manufacturing-industry': IndustryManufacturing,
   construction: Construction,
@@ -53,15 +54,18 @@ const industryComponents = {
   healthcare: Healthcare,
   agriculture: Agriculture,
   hospitality: Hospitality,
+  hotel: Hospitality,
   logistics: Logistics,
   trading: Trading,
   'commodities-trading': CommoditiesTrading,
   mining: Mining,
-  pharmaceutical: Pharmaceutical
+  pharmaceutical: Pharmaceutical,
+  'non-profit': NonProfit,
+  nonprofit: NonProfit
 }
 
 export default function App() {
-  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'manufacturing', 'manufacturing-module', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'ecommerce', 'contact', 'apps']
+  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'manufacturing-module', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'ecommerce', 'contact', 'apps']
 
   const getPageFromHash = () => {
     const hash = window.location.hash.replace(/^#/, '').trim()
@@ -124,7 +128,7 @@ export default function App() {
         <HRPayroll onNavigate={handleNavigate} />
       ) : (currentPage === 'no-code-builder' || currentPage === 'builder') ? (
         <NoCodeBuilder onNavigate={handleNavigate} />
-      ) : (currentPage === 'manufacturing' || currentPage === 'manufacturing-module') ? (
+      ) : currentPage === 'manufacturing-module' ? (
         <ModuleManufacturing onNavigate={handleNavigate} />
       ) : currentPage === 'ecommerce' ? (
         <Ecommerce onNavigate={handleNavigate} />
@@ -150,9 +154,6 @@ export default function App() {
 
           {/* Modules of AiBizzApp (10+ Years Track Record Carousel) - Middle of Home Page */}
           <ERPModules onNavigate={handleNavigate} />
-
-          {/* Industries Section */}
-          <Industries onNavigate={handleNavigate} />
 
           {/* Testimonials: Trusted by Clients Globally */}
           <Testimonials onNavigate={handleNavigate} />

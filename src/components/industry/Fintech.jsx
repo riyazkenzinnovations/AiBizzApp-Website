@@ -14,7 +14,7 @@ import {
   Building
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import fintechImg from '../../assets/industry/fintech.jpg'
+import fintechImg from '../../assets/industry-images/fintech.jpeg'
 
 export default function Fintech({ onNavigate }) {
   const challenges = [

@@ -89,7 +89,7 @@ export default function Pricing({ onNavigate }) {
               <div className="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-slate-300 transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-slate-900">Sites</h3>
+                    <h3 className="text-xl font-bold text-slate-900">Application</h3>
                     <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Shared</span>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
@@ -97,7 +97,7 @@ export default function Pricing({ onNavigate }) {
                   </p>
 
                   <div className="mt-6 flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-slate-900">₹410</span>
+                    <span className="text-3xl font-bold text-slate-900">$12</span>
                     <span className="text-xs text-slate-500 font-medium">onwards /mo</span>
                   </div>
 
@@ -140,9 +140,12 @@ export default function Pricing({ onNavigate }) {
                 </div>
 
                 <div className="pt-6">
-                  <button className="w-full py-2.5 rounded-lg border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-900 font-semibold text-xs transition-all cursor-pointer shadow-xs">
+                  <a
+                    href="https://aibizzhub.io/marketplace"
+                    className="block text-center w-full py-2.5 rounded-lg border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-900 font-semibold text-xs transition-all cursor-pointer shadow-xs"
+                  >
                     Choose Sites Plan
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -162,7 +165,7 @@ export default function Pricing({ onNavigate }) {
                   </p>
 
                   <div className="mt-6 flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-slate-900">₹1,800</span>
+                    <span className="text-3xl font-bold text-slate-900">$149</span>
                     <span className="text-xs text-slate-500 font-medium">onwards /mo</span>
                   </div>
 
@@ -195,9 +198,9 @@ export default function Pricing({ onNavigate }) {
                   </ul>
 
                   {/* Higher Tier within Servers */}
-                  <div className="mt-6 pt-5 border-t border-slate-100">
+                  {/* <div className="mt-6 pt-5 border-t border-slate-100">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-2xl font-bold text-slate-900">₹5,400</span>
+                      <span className="text-2xl font-bold text-slate-900">$65</span>
                       <span className="text-xs text-slate-500 font-medium">onwards /mo</span>
                     </div>
                     <div className="flex items-center gap-3 mt-2 text-[11px] font-bold text-slate-500">
@@ -208,13 +211,16 @@ export default function Pricing({ onNavigate }) {
                     <p className="text-xs text-slate-500 mt-2 font-medium">
                       Everything in Hetzner, plus
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="pt-6">
-                  <button className="w-full py-2.5 rounded-lg bg-[#0066cc] hover:bg-[#0052a3] text-white font-semibold text-xs transition-all shadow-xs cursor-pointer">
+                  <a
+                    href="https://aibizzhub.io/#pricing"
+                    className="block text-center w-full py-2.5 rounded-lg bg-[#0066cc] hover:bg-[#0052a3] text-white font-semibold text-xs transition-all shadow-xs cursor-pointer"
+                  >
                     Choose Server Plan
-                  </button>
+                  </a>
                 </div>
               </div>
 

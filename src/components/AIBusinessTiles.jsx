@@ -348,7 +348,7 @@ export default function AIBusinessTiles({ onNavigate }) {
               <Bot className="w-4 h-4" />
               <span>Joule & Autonomous Agents Integration</span>
             </div>
-            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
               Ready to deploy AI tailored to your industry workflows?
             </h3>
             <p className="text-sm sm:text-base text-blue-100 max-w-2xl">

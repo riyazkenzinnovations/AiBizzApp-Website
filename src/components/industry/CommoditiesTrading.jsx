@@ -14,7 +14,7 @@ import {
   PieChart
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import commoditiesImg from '../../assets/industry/commodities.jpg'
+import commoditiesImg from '../../assets/industry-images/logistics.jpeg'
 
 export default function CommoditiesTrading({ onNavigate }) {
   const challenges = [

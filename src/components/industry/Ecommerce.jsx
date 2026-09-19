@@ -33,7 +33,7 @@ import {
   Check,
   Send
 } from 'lucide-react'
-import heroImg from '../../assets/industry/ecommerce/hero.jpg'
+import heroImg from '../../assets/industry-images/Retail.jpeg'
 
 export default function Ecommerce({ onNavigate }) {
   const [openFaq, setOpenFaq] = useState(0)
@@ -392,12 +392,12 @@ export default function Ecommerce({ onNavigate }) {
       <section
         className="relative pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-36 lg:pb-28 text-white overflow-hidden"
         style={{
-          background: 'linear-gradient(172deg, #102ba8 0%, #1f2cb4 22%, #4222b8 50%, #6817c2 76%, #8e10d2 100%)'
+          background: 'linear-gradient(172deg, #0e44cb 0%, #143fb9 25%, #183cae 50%, #143194 76%, #0c1f68 100%)'
         }}
       >
         {/* Ambient background lighting flares */}
         <div className="absolute top-0 left-1/4 w-[520px] h-[520px] bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 right-10 w-[600px] h-[600px] bg-fuchsia-500/25 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 right-10 w-[600px] h-[600px] bg-blue-600/25 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute inset-0 bg-radial-at-t from-blue-500/15 via-transparent to-transparent pointer-events-none" />
 
         {/* Decorative 4-point sparkle stars on the left */}
@@ -491,17 +491,6 @@ export default function Ecommerce({ onNavigate }) {
                     alt="E-commerce ERP automated warehouse and live fulfillment dashboard"
                     className="w-full h-full object-cover object-center block transform transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  
-                  {/* Floating HUD Badges */}
-                  <div className="absolute top-3.5 left-3.5 sm:top-4 sm:left-4 bg-slate-950/85 backdrop-blur-md px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl border border-white/20 text-xs font-semibold text-white flex items-center gap-2 shadow-lg">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>ERP LIVE • 99.8% INVENTORY SYNC</span>
-                  </div>
-
-                  <div className="absolute bottom-3.5 right-3.5 sm:bottom-4 sm:right-4 bg-slate-950/90 backdrop-blur-md px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-white/20 text-xs text-white shadow-lg">
-                    <div className="text-[10px] text-blue-200/80 font-medium">DISPATCH VELOCITY</div>
-                    <div className="text-sm sm:text-base font-bold text-cyan-300">+45% Faster Pick-Pack</div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -510,7 +499,7 @@ export default function Ecommerce({ onNavigate }) {
         </div>
 
         {/* Signature pointer shape pointing cleanly into the section below */}
-        <div className="absolute -bottom-px left-1/2 -translate-x-1/2 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-t-[18px] border-t-[#8e10d2] z-20 pointer-events-none" />
+        <div className="absolute -bottom-px left-1/2 -translate-x-1/2 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-t-[18px] border-t-[#0c1f68] z-20 pointer-events-none" />
       </section>
 
       {/* 2. OVERVIEW SECTION */}
@@ -714,11 +703,11 @@ export default function Ecommerce({ onNavigate }) {
           <div
             className="rounded-3xl p-8 sm:p-12 text-white text-center shadow-2xl relative overflow-hidden"
             style={{
-              background: 'linear-gradient(172deg, #102ba8 0%, #1f2cb4 25%, #4222b8 55%, #6817c2 80%, #8e10d2 100%)'
+              background: 'linear-gradient(172deg, #0e44cb 0%, #143fb9 25%, #183cae 50%, #143194 76%, #0c1f68 100%)'
             }}
           >
             {/* Background Ambient Glows */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-fuchsia-400/25 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/25 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 space-y-4 max-w-2xl mx-auto">
@@ -726,7 +715,7 @@ export default function Ecommerce({ onNavigate }) {
                 READY TO ELEVATE YOUR STORE?
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight text-white">
                 Scale Your Business with <br />
                 <span className="text-cyan-300 drop-shadow-sm">E-commerce ERP Solutions</span>
               </h2>

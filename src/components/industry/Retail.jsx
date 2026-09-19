@@ -14,7 +14,7 @@ import {
   PackageCheck
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import retailImg from '../../assets/industry/ecommerce/hero.jpg'
+import retailImg from '../../assets/industry-images/logistics.jpeg'
 
 export default function Retail({ onNavigate }) {
   const challenges = [

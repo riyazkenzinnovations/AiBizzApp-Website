@@ -38,7 +38,8 @@ import {
   ShieldCheck,
   Headphones,
   UserCheck,
-  Sliders
+  Sliders,
+  HeartHandshake
 } from 'lucide-react'
 import logoImg from '../assets/AiBizzApp.jpeg'
 
@@ -75,7 +76,7 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
             { name: 'Sales', icon: TrendingUp, href: '#sales' },
             { name: 'CRM', icon: Users, href: '#crm' },
             { name: 'Stock', icon: Boxes, href: '#stock' },
-            { name: 'Manufacturing', icon: Factory, href: '#manufacturing' },
+            { name: 'Manufacturing', icon: Factory, href: '#manufacturing-module' },
             { name: 'Projects', icon: Briefcase, href: '#projects' },
             { name: 'Assets', icon: Layers, href: '#assets' },
             { name: 'Point of Sale', icon: Store, href: '#pos' },
@@ -99,18 +100,19 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
             { name: 'Fintech', icon: Landmark, href: '#fintech' },
             { name: 'Healthcare', icon: Stethoscope, href: '#healthcare' },
             { name: 'Agriculture', icon: Sprout, href: '#agriculture' },
-            { name: 'Hospitality', icon: Hotel, href: '#hospitality' },
+            { name: 'Hotel', icon: Hotel, href: '#hospitality' },
             { name: 'Logistics', icon: Truck, href: '#logistics' },
-            { name: 'Pharmaceutical', icon: Pill, href: '#pharmaceutical' }
+            { name: 'Pharmaceutical', icon: Pill, href: '#pharmaceutical' },
+            { name: 'Non-Profit', icon: HeartHandshake, href: '#non-profit' }
           ]
         },
         {
           name: 'Services',
           hasDropdown: true,
           children: [
-            { name: 'Enterprise', href: '#enterprise' },
-            { name: 'AiBizz Cloud', href: '#cloud' },
-            { name: 'AiBizz Academy', href: '#academy' }
+            // { name: 'Enterprise', href: '#enterprise' },
+            { name: 'AiBizz Cloud', href: 'https://aibizzhub.io/' },
+            // { name: 'AiBizz Academy', href: '#academy' }
           ]
         }
       ]
@@ -118,23 +120,21 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
     {
       title: 'Platform & Ecosystem',
       items: [
-        { name: 'Ecosystem Apps', icon: Layers, href: '#apps', route: 'apps' },
-        { name: 'Pricing', icon: CreditCard, href: '#pricing' },
-        { name: 'Customers', icon: Users, href: '#customers' },
-        { name: 'Partners', icon: Globe2, href: '#partners' }
+        { name: 'Marketplace', icon: Layers, href: '#apps', route: 'apps' },
+        { name: 'Pricing', icon: CreditCard, href: '#pricing' }
+        // { name: 'Customers', icon: Users, href: '#customers' },
+        // { name: 'Partners', icon: Globe2, href: '#partners' }
       ]
     },
     {
-      title: 'Resources & Company',
+      title: 'Help & Company',
       items: [
         {
-          name: 'Resources',
-          icon: FileText,
+          name: 'Help',
+          icon: HelpCircle,
           hasDropdown: true,
           children: [
-            { name: 'Documentation', desc: 'APIs, SDKs and setup guides' },
-            { name: 'Community Forum', desc: 'Ask questions and collaborate' },
-            { name: 'Case Studies', desc: 'Real-world customer success' }
+            { name: 'Documentation', desc: 'APIs, SDKs and setup guides' }
           ]
         },
         { name: 'Contact us', icon: Mail, href: '#contact', active: true },
@@ -373,26 +373,31 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                       <span>Enterprise Services</span>
                     </div>
                     <div className="py-1 space-y-0.5">
-                      {navSections[0].items[2].children.map((srv, idx) => (
-                        <a
-                          key={idx}
-                          href={srv.href}
-                          onClick={() => {
-                            if (currentPage !== 'home' && onNavigate) onNavigate('home')
-                            setOpenDropdown(null)
-                          }}
-                          className="block px-3 py-2 rounded-xl text-sm font-medium text-slate-700 hover:text-[#0066cc] hover:bg-blue-50/70 transition-colors"
-                        >
-                          {srv.name}
-                        </a>
-                      ))}
+                      {navSections[0].items[2].children.map((srv, idx) => {
+                        const isExternal = srv.href && srv.href.startsWith('http')
+                        return (
+                          <a
+                            key={idx}
+                            href={srv.href}
+                            onClick={() => {
+                              if (!isExternal) {
+                                if (currentPage !== 'home' && onNavigate) onNavigate('home')
+                              }
+                              setOpenDropdown(null)
+                            }}
+                            className="block px-3 py-2 rounded-xl text-sm font-medium text-slate-700 hover:text-[#0066cc] hover:bg-blue-50/70 transition-colors"
+                          >
+                            {srv.name}
+                          </a>
+                        )
+                      })}
                     </div>
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
 
-            {/* 4. Ecosystem Apps */}
+            {/* 4. Marketplace */}
             <button
               onClick={() => {
                 if (onNavigate) onNavigate('apps')
@@ -404,7 +409,7 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                   : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/80'
               }`}
             >
-              <span>Ecosystem Apps</span>
+              <span>Marketplace</span>
             </button>
 
             {/* 5. Pricing */}
@@ -422,8 +427,8 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
               <span>Pricing</span>
             </button>
 
-            {/* 6. Customers */}
-            <a
+            {/* 6. Customers (commented out) */}
+            {/* <a
               href="#customers"
               onClick={() => {
                 if (currentPage !== 'home' && onNavigate) onNavigate('home')
@@ -431,10 +436,10 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
               className="px-2 xl:px-3 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base font-medium text-slate-600 hover:text-slate-950 hover:bg-slate-100/80 transition-all whitespace-nowrap"
             >
               <span>Customers</span>
-            </a>
+            </a> */}
 
-            {/* 7. Partners */}
-            <a
+            {/* 7. Partners (commented out) */}
+            {/* <a
               href="#partners"
               onClick={() => {
                 if (currentPage !== 'home' && onNavigate) onNavigate('home')
@@ -442,28 +447,28 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
               className="px-2 xl:px-3 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base font-medium text-slate-600 hover:text-slate-950 hover:bg-slate-100/80 transition-all whitespace-nowrap"
             >
               <span>Partners</span>
-            </a>
+            </a> */}
 
-            {/* 8. Resources Dropdown */}
+            {/* 8. Help Dropdown */}
             <div 
               className="relative"
-              onMouseEnter={() => setOpenDropdown('Resources')}
+              onMouseEnter={() => setOpenDropdown('Help')}
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <button
-                onClick={() => toggleDropdown('Resources')}
+                onClick={() => toggleDropdown('Help')}
                 className={`flex items-center gap-1 xl:gap-1.5 px-2 xl:px-3 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base font-medium transition-all whitespace-nowrap cursor-pointer ${
-                  openDropdown === 'Resources'
+                  openDropdown === 'Help'
                     ? 'text-[#0066cc] bg-blue-50/80 font-semibold'
                     : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/80'
                 }`}
               >
-                <span>Resources</span>
-                <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform duration-200 ${openDropdown === 'Resources' ? 'rotate-180 text-[#0066cc]' : 'text-slate-400'}`} />
+                <span>Help</span>
+                <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform duration-200 ${openDropdown === 'Help' ? 'rotate-180 text-[#0066cc]' : 'text-slate-400'}`} />
               </button>
 
               <AnimatePresence>
-                {openDropdown === 'Resources' && (
+                {openDropdown === 'Help' && (
                   <motion.div
                     initial={{ opacity: 0, y: 8, scale: 0.98 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -472,13 +477,14 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                     className="absolute right-0 xl:left-0 mt-2 w-64 p-2.5 rounded-2xl bg-white border border-slate-200/90 shadow-xl shadow-slate-200/60 z-50 text-slate-800 before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3"
                   >
                     <div className="flex items-center gap-2 px-3 py-2 text-xs font-semibold text-slate-800 border-b border-slate-100 mb-1">
-                      <FileText className="w-4 h-4 text-[#0066cc]" />
-                      <span>Resources</span>
+                      <HelpCircle className="w-4 h-4 text-[#0066cc]" />
+                      <span>Help &amp; Documentation</span>
                     </div>
                     <div className="py-1 space-y-1">
-                      <button
-                        onClick={() => {
-                          setShowDocs(true)
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault()
                           setOpenDropdown(null)
                         }}
                         className="w-full text-left flex items-start gap-2.5 px-3 py-2 rounded-xl text-slate-700 hover:text-slate-950 hover:bg-blue-50/80 transition-colors group cursor-pointer"
@@ -491,44 +497,6 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                           </div>
                           <div className="text-xs text-slate-500">
                             APIs, SDKs, setup guides &amp; user manual
-                          </div>
-                        </div>
-                      </button>
-
-                      <a
-                        href="#forum"
-                        onClick={() => {
-                          if (currentPage !== 'home' && onNavigate) onNavigate('home')
-                          setOpenDropdown(null)
-                        }}
-                        className="flex items-start gap-2.5 px-3 py-2 rounded-xl text-slate-700 hover:text-slate-950 hover:bg-slate-50 transition-colors group"
-                      >
-                        <Users className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                        <div>
-                          <div className="text-sm font-semibold text-slate-900 group-hover:text-[#0066cc] transition-colors">
-                            Community Forum
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Ask questions, discuss &amp; collaborate
-                          </div>
-                        </div>
-                      </a>
-
-                      <a
-                        href="#case-studies"
-                        onClick={() => {
-                          if (currentPage !== 'home' && onNavigate) onNavigate('home')
-                          setOpenDropdown(null)
-                        }}
-                        className="flex items-start gap-2.5 px-3 py-2 rounded-xl text-slate-700 hover:text-slate-950 hover:bg-slate-50 transition-colors group"
-                      >
-                        <FileText className="w-4 h-4 text-purple-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                        <div>
-                          <div className="text-sm font-semibold text-slate-900 group-hover:text-[#0066cc] transition-colors">
-                            Case Studies
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Real-world enterprise customer stories
                           </div>
                         </div>
                       </a>
@@ -621,9 +589,13 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                                         } else if (item.name === 'Industry') {
                                           e.preventDefault()
                                           if (onNavigate) onNavigate(subSlug)
-                                        } else if (item.name === 'Resources' && sub.name === 'Documentation') {
+                                        } else if ((item.name === 'Resources' || item.name === 'Help') && sub.name === 'Documentation') {
                                           e.preventDefault()
-                                          setShowDocs(true)
+                                          // Placeholder - does not open any link or modal
+                                        } else if (sub.href && sub.href.startsWith('http')) {
+                                          // External link - allowed to redirect in same page
+                                          setMobileMenuOpen(false)
+                                          return
                                         } else if (currentPage !== 'home' && onNavigate) {
                                           onNavigate('home')
                                         }
@@ -697,7 +669,7 @@ export default function Navbar({ currentPage = 'home', onNavigate }) {
                       )
                     }
 
-                    if (item.name === 'Ecosystem Apps' || item.route === 'apps') {
+                    if (item.name === 'Marketplace' || item.name === 'Ecosystem Apps' || item.route === 'apps') {
                       return (
                         <button
                           key={iIdx}

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect, useRef } from 'react'
 import {
   Cpu,
   MessageSquare,
@@ -31,58 +31,157 @@ import {
   ArrowRight,
   Sparkles,
   ChevronRight,
-  X
+  X,
+  Headphones,
+  ShoppingBag
 } from 'lucide-react'
 
-// 1. Featured Top 6 Essential Integrations (Matches Screenshot 1)
+// Real AiBizzApp 3D App Logos
+import erpLogo from '../assets/AiBizzApp2.jpeg'
+import hrLogo from '../assets/AiBizzApp6.jpeg'
+import ravenLogo from '../assets/AiBizzApp4.jpeg'
+import crmLogo from '../assets/AiBizzApp5.jpeg'
+import paymentsLogo from '../assets/AiBizzApp3.jpeg'
+import lmsLogo from '../assets/AiBizzApp1.jpeg'
+
+// 1. Featured Marketplace Apps (Matches Screenshots 1, 2 & 3)
 const FEATURED_APPS = [
+  // Row 1 (Screenshot 1)
+  // 1. AiBizzApp ERP
   {
-    id: 'aibizz-core',
-    title: 'AiBizzApp',
-    description: "World's leading AI-powered enterprise ERP with unified accounting, supply chain, CRM, and manufacturing.",
-    icon: Cpu,
-    iconBg: 'bg-[#0284c7]',
-    tag: 'Core ERP'
+    id: 'aibizz-erp',
+    title: 'AiBizzApp ERP',
+    description: 'A comprehensive, feature-rich ERP solution',
+    price: '$12 Per User/Month',
+    image: erpLogo,
+    category: 'Core ERP'
   },
+  // 2. AiBizzApp CRM
   {
-    id: 'whatsapp',
-    title: 'WhatsApp Cloud API',
-    description: 'Send invoices, delivery updates, OTP verifications, and customer support messages directly via official WhatsApp API.',
-    icon: MessageSquare,
-    iconBg: 'bg-[#16a34a]',
-    tag: 'Communication'
+    id: 'aibizz-crm',
+    title: 'AiBizzApp CRM',
+    description: 'Simplify Sales, Amplify Relationships',
+    price: '$3 Per User/Month',
+    image: crmLogo,
+    category: 'CRM'
   },
+  // 3. HR & Payroll
   {
-    id: 'twilio',
-    title: 'Twilio Integration',
-    description: 'Automated SMS, phone number verification, and instant voice alerts integrated seamlessly with ERP workflows.',
-    icon: MessageSquare,
-    iconBg: 'bg-[#e11d48]',
-    tag: 'Messaging'
+    id: 'hr-payroll',
+    title: 'HR & Payroll',
+    description: 'Efficient HR and payroll management',
+    price: '$3 Per User/Month',
+    image: hrLogo,
+    category: 'HRMS'
   },
+  // 4. Helpdesk
   {
-    id: 'woocommerce',
-    title: 'WooCommerce Connector',
-    description: 'Real-time two-way synchronization of product catalogs, live stock inventory, customer profiles, and web orders.',
-    icon: ShoppingCart,
-    iconBg: 'bg-[#9333ea]',
-    tag: 'E-Commerce'
+    id: 'helpdesk',
+    title: 'Helpdesk',
+    description: 'Customer Service, Made Simple and Effective',
+    price: '$3 Per User/Month',
+    badgeType: 'helpdesk',
+    category: 'Support'
   },
+  // 5. Education
   {
-    id: 'telegram',
-    title: 'Telegram Integration',
-    description: 'Instant notification bots and alert triggers for sales approvals, critical exceptions, and daily executive reports.',
-    icon: Send,
-    iconBg: 'bg-[#0ea5e9]',
-    tag: 'Automation'
+    id: 'education',
+    title: 'Education',
+    description: 'Education and School Management System',
+    price: '$3 Per User/Month',
+    badgeType: 'education',
+    category: 'Education'
   },
+  // 6. Payments
   {
-    id: 'paystack',
-    title: 'Paystack Gateway',
-    description: 'Secure multi-currency payment gateway processing credit cards, bank transfers, and mobile money with auto-reconciliation.',
-    icon: CreditCard,
-    iconBg: 'bg-[#0d9488]',
-    tag: 'Payments'
+    id: 'payments',
+    title: 'Payments',
+    description: 'Payments app for AiBizzApp',
+    price: '$3 Per User/Month',
+    image: paymentsLogo,
+    category: 'Finance'
+  },
+  // 7. AiBizzApp LMS
+  {
+    id: 'aibizz-lms',
+    title: 'AiBizzApp LMS',
+    description: 'Efficient Learning Management System',
+    price: '$3 Per User/Month',
+    image: lmsLogo,
+    category: 'Learning'
+  },
+  // 8. SaaS Integration
+  {
+    id: 'saas-integration',
+    title: 'SaaS Integration',
+    description: 'SaaS Integration',
+    price: '$3 Per User/Month',
+    badgeType: 'saas',
+    category: 'Integrations'
+  },
+  // 9. Zatca Phase-2
+  {
+    id: 'zatca-phase-2',
+    title: 'Zatca Phase-2',
+    description: 'Zatca Phase-2 Compliance',
+    price: '$3 Per User/Month',
+    badgeType: 'zatca-2',
+    category: 'Compliance'
+  },
+  // Remaining apps
+  // 10. Raven
+  {
+    id: 'raven',
+    title: 'Raven',
+    description: 'Team chat for seamless communication',
+    price: '$3 Per User/Month',
+    image: ravenLogo,
+    category: 'Communication'
+  },
+  // 11. India Compliance
+  {
+    id: 'india-compliance',
+    title: 'India Compliance',
+    description: 'Compliance solutions for Indian businesses',
+    price: '$3 Per User/Month',
+    badgeType: 'india',
+    category: 'Compliance'
+  },
+  // 12. KSA Compliance
+  {
+    id: 'ksa-compliance',
+    title: 'KSA Compliance',
+    description: 'KSA Compliance with ZATCA Integration',
+    price: '$3 Per User/Month',
+    badgeType: 'ksa',
+    category: 'Compliance'
+  },
+  // 13. Ecommerce Integrations
+  {
+    id: 'ecommerce-integrations',
+    title: 'Ecommerce Integrations',
+    description: 'Ecommerce Marketplace Integrations',
+    price: '$3 Per User/Month',
+    badgeType: 'ecommerce',
+    category: 'E-Commerce'
+  },
+  // 14. HRMS Extension
+  {
+    id: 'hrms-extension',
+    title: 'HRMS Extension',
+    description: 'HRMS Extension',
+    price: '$3 Per User/Month',
+    badgeType: 'hrms',
+    category: 'HRMS'
+  },
+  // 15. CRM Extension
+  {
+    id: 'crm-extension',
+    title: 'CRM Extension',
+    description: 'CRM Extension',
+    price: '$3 Per User/Month',
+    badgeType: 'crm-ext',
+    category: 'CRM'
   }
 ]
 
@@ -93,9 +192,19 @@ const ECOSYSTEM_APPS = [
     name: 'AiBizzApp',
     desc: "Unified enterprise AI ERP with integrated business operations",
     category: 'Core ERP',
+    price: 'Price: $12 Per User/Month',
     iconType: 'aibizz',
     iconBg: 'bg-[#0070f3]',
     initial: 'A'
+  },
+    {
+    name: 'Telegram',
+    desc: 'Telegram Integration for AiBizzApp',
+    category: 'Communication',
+    price: 'Price: $3 Per User/Month',
+    iconType: 'telegram',
+    iconBg: 'bg-[#0088cc]',
+    icon: Send
   },
   {
     name: 'Twilio',
@@ -121,14 +230,7 @@ const ECOSYSTEM_APPS = [
     iconBg: 'bg-[#10b981]',
     icon: FileText
   },
-  {
-    name: 'Telegram',
-    desc: 'Telegram Integration for AiBizzApp',
-    category: 'Communication',
-    iconType: 'telegram',
-    iconBg: 'bg-[#0088cc]',
-    icon: Send
-  },
+
   {
     name: 'AiBizz Shipping',
     desc: 'Shipping integration for AiBizzApp',
@@ -591,11 +693,215 @@ const CATEGORIES = [
   'Support'
 ]
 
+// Reusable Ai Logo Badge for marketplace cards
+function AiBadge({ color1, color2, bubbleColor }) {
+  const gradientId = `grad-${color1.replace('#', '')}`
+  return (
+    <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center relative group-hover:scale-105 transition-transform duration-200">
+      <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-xs">
+        <defs>
+          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor={color1} />
+            <stop offset="100%" stopColor={color2} />
+          </linearGradient>
+        </defs>
+        {/* Floating bubbles */}
+        <circle cx="28" cy="22" r="3.5" fill={color1} opacity="0.85" />
+        <circle cx="35" cy="14" r="2.2" fill={color1} opacity="0.65" />
+        <circle cx="43" cy="18" r="4" fill={bubbleColor} opacity="0.9" />
+        <circle cx="22" cy="30" r="2.5" fill={color1} opacity="0.75" />
+        {/* 3D play-shield body */}
+        <path
+          d="M 28 32 C 28 26 34 22 40 25 L 75 44 C 81 47 81 55 75 58 L 40 77 C 34 80 28 76 28 70 Z"
+          fill={`url(#${gradientId})`}
+        />
+        {/* White Ai Text */}
+        <text
+          x="49"
+          y="56"
+          textAnchor="middle"
+          fill="#ffffff"
+          fontWeight="800"
+          fontSize="24"
+          fontFamily="system-ui, -apple-system, sans-serif"
+        >
+          Ai
+        </text>
+      </svg>
+    </div>
+  )
+}
+
+// Logo and Badge Renderer for Marketplace Cards (Matches Screenshots 1, 2, 3)
+function AppCardLogo({ app }) {
+  if (app.image) {
+    return (
+      <img
+        src={app.image}
+        alt={app.title || app.name}
+        className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-xs group-hover:scale-105 transition-transform duration-200"
+      />
+    )
+  }
+
+  switch (app.badgeType) {
+    case 'helpdesk':
+      return <AiBadge color1="#f59e0b" color2="#d97706" bubbleColor="#fbbf24" />
+    case 'ecommerce':
+      return <AiBadge color1="#10b981" color2="#059669" bubbleColor="#34d399" />
+    case 'education':
+      return <AiBadge color1="#06b6d4" color2="#0891b2" bubbleColor="#38bdf8" />
+    case 'crm-ext':
+      return <AiBadge color1="#2563eb" color2="#1d4ed8" bubbleColor="#60a5fa" />
+    case 'india':
+      return (
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#373a3c] rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200">
+          <svg viewBox="0 0 60 60" className="w-10 h-10">
+            <path d="M 23 29 C 23 15 37 13 46 13 C 46 21 44 35 30 35 C 26 35 23 32 23 29 Z" fill="#22c55e" />
+            <path d="M 16 41 C 16 33 26 31 32 31 C 32 36 30 45 21 45 C 18 45 16 43 16 41 Z" fill="#4ade80" />
+          </svg>
+        </div>
+      )
+    case 'zatca-2':
+      return (
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#373a3c] rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200">
+          <svg viewBox="0 0 60 60" className="w-10 h-10">
+            <path d="M 23 29 C 23 15 37 13 46 13 C 46 21 44 35 30 35 C 26 35 23 32 23 29 Z" fill="#eab308" />
+            <path d="M 16 41 C 16 33 26 31 32 31 C 32 36 30 45 21 45 C 18 45 16 43 16 41 Z" fill="#facc15" />
+          </svg>
+        </div>
+      )
+    case 'ksa':
+      return (
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#006c35] rounded-xl flex items-center justify-center p-2 shadow-xs group-hover:scale-105 transition-transform duration-200">
+          <svg viewBox="0 0 64 48" className="w-12 h-9">
+            <g fill="#ffffff" stroke="#ffffff">
+              <path d="M 12 16 Q 18 10 24 16 Q 30 10 36 16 Q 42 10 48 16 Q 52 12 55 16" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+              <path d="M 14 22 Q 22 18 30 22 Q 38 18 46 22 Q 51 20 53 23" strokeWidth="2" strokeLinecap="round" fill="none" />
+              <path d="M 12 31 L 49 31 M 17 28 L 17 34 M 14 31 L 12 31" strokeWidth="2" strokeLinecap="round" />
+              <path d="M 49 31 Q 53 31 55 29" strokeWidth="2" strokeLinecap="round" fill="none" />
+            </g>
+          </svg>
+        </div>
+      )
+    case 'saas':
+      return (
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#646b73] rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200">
+          <svg viewBox="0 0 24 24" className="w-9 h-9 text-white" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+      )
+    case 'hrms':
+      return (
+        <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+          <svg viewBox="0 0 64 64" className="w-14 h-14 drop-shadow-xs">
+            <defs>
+              <linearGradient id="hrmsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#3b82f6" />
+                <stop offset="50%" stopColor="#8b5cf6" />
+                <stop offset="100%" stopColor="#ec4899" />
+              </linearGradient>
+            </defs>
+            <path d="M 22 18 L 36 18 C 46 18 50 26 44 34 C 38 42 28 42 24 38 L 24 50 L 18 50 L 18 22 C 18 19 20 18 22 18 Z" fill="url(#hrmsGradient)" />
+            <path d="M 26 24 L 35 24 C 40 24 43 28 40 32 C 37 36 31 36 28 34 Z" fill="#ffffff" opacity="0.9" />
+            <rect x="18" y="30" width="4" height="4" fill="#60a5fa" rx="1" />
+            <rect x="14" y="36" width="3" height="3" fill="#38bdf8" rx="0.5" />
+          </svg>
+        </div>
+      )
+    default:
+      return null
+  }
+}
+
 export default function AppServices({ onNavigate }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [displayCount, setDisplayCount] = useState(15)
   const [selectedApp, setSelectedApp] = useState(null)
+  const [toast, setToast] = useState(null)
+  const [isHovered, setIsHovered] = useState(false)
+  const [timeLeft, setTimeLeft] = useState(4000)
+  const timerRef = useRef(null)
+
+  useEffect(() => {
+    if (!toast) {
+      setTimeLeft(4000)
+      setIsHovered(false)
+      if (timerRef.current) clearInterval(timerRef.current)
+      return
+    }
+
+    // Stop countdown and pause redirect when user hovers to read
+    if (isHovered) {
+      if (timerRef.current) clearInterval(timerRef.current)
+      return
+    }
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 100) {
+          clearInterval(timerRef.current)
+          const destination = toast?.redirectUrl || 'https://aibizzhub.io/marketplace'
+          setToast(null)
+          if (destination.includes('#contact')) {
+            if (onNavigate) onNavigate('contact')
+            window.location.hash = '#contact'
+            const contactElem = document.getElementById('contact')
+            if (contactElem) {
+              contactElem.scrollIntoView({ behavior: 'smooth' })
+            }
+          } else {
+            window.location.href = destination
+          }
+          return 0
+        }
+        return prev - 100
+      })
+    }, 100)
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current)
+    }
+  }, [toast, isHovered])
+
+  const handleDeploy = (e) => {
+    if (e) e.preventDefault()
+    const appName = selectedApp?.title || selectedApp?.name || 'Selected App'
+
+    let targetUrl = 'https://aibizzhub.io/marketplace'
+    let toastTitle = `Preparing ${appName} Deployment`
+    let toastMsg = `Redirecting to AiBizzHub Marketplace to complete installation and activate ${appName} for your account.`
+
+    // Only in Marketplace & Addons:
+    // 1st app -> https://aibizzhub.io/register
+    // remaining 58 apps -> http://localhost:5173/#contact
+    if (selectedApp?.isEcosystem) {
+      if (selectedApp?.name === 'AiBizzApp' || selectedApp?.ecosystemIndex === 0) {
+        targetUrl = 'https://aibizzhub.io/register'
+        toastTitle = `Registering for ${appName}`
+        toastMsg = `Redirecting to AiBizzHub Registration to create your account and deploy ${appName}...`
+      } else {
+        targetUrl = 'http://localhost:5173/#contact'
+        toastTitle = `Requesting Setup for ${appName}`
+        toastMsg = `Redirecting to contact page to deploy and configure ${appName} for your ERP...`
+      }
+    }
+
+    setTimeLeft(4000)
+    setIsHovered(false)
+    setToast({
+      id: Date.now(),
+      title: toastTitle,
+      message: toastMsg,
+      redirectUrl: targetUrl,
+      type: 'success'
+    })
+    setSelectedApp(null)
+  }
 
   const handleAction = (action) => {
     if (onNavigate) onNavigate(action)
@@ -621,7 +927,7 @@ export default function AppServices({ onNavigate }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* ========================================================= */}
-        {/* SECTION 1: ESSENTIAL INTEGRATIONS (Screenshot 1)          */}
+        {/* SECTION 1: MARKETPLACE APPS (Screenshots 1, 2 & 3)         */}
         {/* ========================================================= */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
           <span className="text-xs font-semibold tracking-wider text-[#0066cc] uppercase bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-100 inline-block mb-3 shadow-xs">
@@ -635,49 +941,42 @@ export default function AppServices({ onNavigate }) {
           </p>
         </div>
 
-        {/* 6 Featured Apps Cards Grid */}
+        {/* 15 Featured Marketplace Apps Cards Grid (Matches Screenshots 1, 2 & 3) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 mb-20">
-          {FEATURED_APPS.map((app) => {
-            const Icon = app.icon
-            return (
-              <div
-                key={app.id}
-                className="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-5">
-                    <div className={`w-12 h-12 rounded-xl ${app.iconBg} text-white flex items-center justify-center shadow-md`}>
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/70">
-                      {app.tag}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#0066cc] transition-colors">
-                    {app.title}
-                  </h3>
-
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    {app.description}
-                  </p>
-                </div>
-
-                <div className="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="inline-flex items-center gap-1.5 text-emerald-600 font-semibold text-[11px]">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Ready to Deploy</span>
-                  </span>
-                  <button
-                    onClick={() => handleAction('contact')}
-                    className="text-slate-400 hover:text-[#0066cc] transition-colors cursor-pointer font-semibold text-[11px]"
-                  >
-                    Request Setup &rarr;
-                  </button>
-                </div>
+          {FEATURED_APPS.map((app) => (
+            <div
+              key={app.id}
+              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-xl hover:border-slate-300 transition-all duration-200 flex flex-col items-center text-center justify-between group"
+            >
+              {/* App Icon / Badge */}
+              <div className="w-16 h-16 sm:w-20 sm:h-20 mb-4 flex items-center justify-center">
+                <AppCardLogo app={app} />
               </div>
-            )
-          })}
+
+              {/* Title & Description */}
+              <div className="w-full flex flex-col items-center mb-4">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 group-hover:text-[#0066cc] transition-colors">
+                  {app.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-500 leading-relaxed min-h-[38px] flex items-center justify-center px-2">
+                  {app.description}
+                </p>
+              </div>
+
+              {/* Price & Buy Button */}
+              <div className="w-full flex flex-col items-center pt-2">
+                <div className="text-xs sm:text-sm font-semibold text-slate-700 mb-3.5">
+                  Price: {app.price}
+                </div>
+                <button
+                  onClick={() => setSelectedApp({ ...app, isFeatured: true })}
+                  className="w-full max-w-[210px] py-2.5 px-6 bg-[#1e293b] hover:bg-[#0f172a] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-xs hover:shadow transition-all active:scale-[0.98] cursor-pointer"
+                >
+                  Buy
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
 
 
@@ -731,45 +1030,52 @@ export default function AppServices({ onNavigate }) {
             ))}
           </div>
 
-          {/* 3-Column Marketplace App Grid (Matches Screenshots 2, 3, 4, 5) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          {/* 3-Column Marketplace App Grid (Matches Same Design as Section 1) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
             {visibleApps.map((app, index) => {
               const IconComponent = app.icon
+
               return (
                 <div
-                  key={index}
-                  onClick={() => setSelectedApp(app)}
-                  className="bg-white rounded-xl p-5 border border-slate-200/80 hover:border-blue-400/80 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(0,102,204,0.08)] hover:-translate-y-0.5 transition-all duration-200 cursor-pointer group flex flex-col justify-between"
+                  key={app.id || index}
+                  className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-xl hover:border-slate-300 transition-all duration-200 flex flex-col items-center text-center justify-between group"
                 >
-                  <div>
-                    {/* Top App Icon Badge */}
-                    <div className="mb-3.5">
-                      <div className={`w-10 h-10 rounded-xl ${app.iconBg} text-white flex items-center justify-center font-bold text-sm shadow-xs group-hover:scale-105 transition-transform`}>
+                  {/* App Icon / Badge */}
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 mb-4 flex items-center justify-center">
+                    {app.image || app.badgeType ? (
+                      <AppCardLogo app={app} />
+                    ) : (
+                      <div className={`w-14 h-14 rounded-2xl ${app.iconBg || 'bg-[#0066cc]'} text-white flex items-center justify-center font-bold text-xl shadow-xs group-hover:scale-105 transition-transform duration-200`}>
                         {IconComponent ? (
-                          <IconComponent className="w-5 h-5 text-white" />
+                          <IconComponent className="w-7 h-7 text-white" />
                         ) : (
-                          <span>{app.initial || app.name.charAt(0)}</span>
+                          <span>{app.initial || app.name?.charAt(0) || 'A'}</span>
                         )}
                       </div>
-                    </div>
+                    )}
+                  </div>
 
-                    {/* App Name */}
-                    <h4 className="text-base font-bold text-slate-900 group-hover:text-[#0066cc] transition-colors leading-snug mb-1">
-                      {app.name}
-                    </h4>
-
-                    {/* App Description (2 lines clamp) */}
-                    <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">
-                      {app.desc}
+                  {/* Title & Description */}
+                  <div className="w-full flex flex-col items-center mb-4">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 group-hover:text-[#0066cc] transition-colors">
+                      {app.name || app.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-500 leading-relaxed min-h-[38px] flex items-center justify-center px-2 line-clamp-2">
+                      {app.desc || app.description}
                     </p>
                   </div>
 
-                  <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400 group-hover:text-[#0066cc] transition-colors">
-                    <span className="font-medium text-slate-500">{app.category}</span>
-                    <span className="inline-flex items-center gap-1 font-semibold">
-                      <span>View details</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </span>
+                  {/* Price & Buy Button */}
+                  <div className="w-full flex flex-col items-center pt-2">
+                    <div className="text-xs sm:text-sm font-semibold text-slate-700 mb-3.5">
+                      {app.price ? (app.price.startsWith('Price:') ? app.price : `Price: ${app.price}`) : 'Price: $3 Per User/Month'}
+                    </div>
+                    <button
+                      onClick={() => setSelectedApp({ ...app, isEcosystem: true, ecosystemIndex: index })}
+                      className="w-full max-w-[210px] py-2.5 px-6 bg-[#1e293b] hover:bg-[#0f172a] text-white text-xs sm:text-sm font-semibold rounded-lg shadow-xs hover:shadow transition-all active:scale-[0.98] cursor-pointer"
+                    >
+                      Buy
+                    </button>
                   </div>
                 </div>
               )
@@ -836,29 +1142,40 @@ export default function AppServices({ onNavigate }) {
             className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in-95 duration-150"
           >
             <div className="flex items-start gap-4 mb-4">
-              <div className={`w-12 h-12 rounded-xl ${selectedApp.iconBg} text-white flex items-center justify-center font-bold text-base shrink-0 shadow-md`}>
-                {selectedApp.icon ? (
+              <div className={`w-12 h-12 rounded-xl ${selectedApp.iconBg || 'bg-slate-50 border border-slate-100'} flex items-center justify-center font-bold text-base shrink-0 shadow-xs overflow-hidden`}>
+                {selectedApp.image || selectedApp.badgeType ? (
+                  <div className="w-10 h-10 flex items-center justify-center scale-90">
+                    <AppCardLogo app={selectedApp} />
+                  </div>
+                ) : selectedApp.icon ? (
                   <selectedApp.icon className="w-6 h-6 text-white" />
                 ) : (
-                  <span>{selectedApp.initial || selectedApp.name?.charAt(0)}</span>
+                  <span className="text-slate-700">{selectedApp.initial || selectedApp.name?.charAt(0) || selectedApp.title?.charAt(0)}</span>
                 )}
               </div>
               <div className="flex-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#0066cc] bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
-                  {selectedApp.category}
-                </span>
-                <h3 className="text-xl font-bold text-slate-900 mt-1">{selectedApp.name}</h3>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#0066cc] bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+                    {selectedApp.category || selectedApp.tag}
+                  </span>
+                  <span className="text-[10px] font-bold tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                    {selectedApp.price || 'Price: $99.99 Per User/Month'}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mt-1">
+                  {selectedApp.title || selectedApp.name}
+                </h3>
               </div>
               <button 
                 onClick={() => setSelectedApp(null)}
-                className="text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors"
+                className="text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             <p className="text-sm text-slate-600 leading-relaxed mb-6">
-              {selectedApp.desc}
+              {selectedApp.description || selectedApp.desc}
             </p>
 
             <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 mb-6 text-xs text-slate-600 flex items-center gap-2">
@@ -867,21 +1184,79 @@ export default function AppServices({ onNavigate }) {
             </div>
 
             <div className="flex items-center gap-3">
-              <button
-                onClick={() => {
-                  setSelectedApp(null)
-                  handleAction('contact')
-                }}
-                className="flex-1 py-3 px-4 rounded-xl bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-sm text-center transition-all shadow-md active:scale-95 cursor-pointer"
+              <a
+                href={
+                  selectedApp?.isEcosystem
+                    ? (selectedApp?.name === 'AiBizzApp' || selectedApp?.ecosystemIndex === 0 ? 'https://aibizzhub.io/register' : 'http://localhost:5173/#contact')
+                    : 'https://aibizzhub.io/marketplace'
+                }
+                onClick={handleDeploy}
+                className="flex-1 py-3 px-4 rounded-xl bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-sm text-center transition-all shadow-md active:scale-95 cursor-pointer block"
               >
                 Deploy into My ERP
-              </button>
+              </a>
               <button
                 onClick={() => setSelectedApp(null)}
                 className="py-3 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-sm transition-all cursor-pointer"
               >
                 Close
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* React-Toastify Style Notification with Pause-on-Hover */}
+      {toast && (
+        <div 
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="fixed top-5 right-5 z-[99999] max-w-sm w-full animate-in fade-in slide-in-from-top-4 duration-300 transition-all"
+        >
+          <div className="bg-white rounded-xl shadow-2xl border border-slate-200/90 p-4 relative overflow-hidden flex items-start gap-3 select-none hover:shadow-emerald-500/10 transition-shadow">
+            {/* Success icon */}
+            <div className="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            </div>
+
+            {/* Message Body */}
+            <div className="flex-1 pr-2">
+              <div className="flex items-center gap-2 mb-0.5">
+                <h4 className="text-sm font-bold text-slate-900 leading-snug">
+                  {toast.title}
+                </h4>
+                {isHovered && (
+                  <span className="text-[10px] font-semibold text-amber-700 bg-amber-50 border border-amber-200/80 px-1.5 py-0.2 rounded shrink-0 animate-pulse">
+                    Paused
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                {toast.message}
+              </p>
+            </div>
+
+            {/* Close Button */}
+            <button
+              onClick={() => {
+                setToast(null)
+                setIsHovered(false)
+              }}
+              className="text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+              aria-label="Close"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {/* React-Toastify Progress Bar (freezes on hover) */}
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-slate-100 overflow-hidden">
+              <div 
+                className="h-full bg-emerald-500"
+                style={{
+                  width: `${Math.max(0, Math.min(100, (timeLeft / 4000) * 100))}%`,
+                  transition: isHovered ? 'none' : 'width 100ms linear'
+                }}
+              />
             </div>
           </div>
         </div>

@@ -32,9 +32,10 @@ export default function Footer({ onNavigate }) {
     { name: 'Fintech', route: 'fintech' },
     { name: 'Logistics', route: 'logistics' },
     { name: 'Agriculture', route: 'agriculture' },
-    { name: 'Hospitality', route: 'hospitality' },
+    { name: 'Hotel', route: 'hospitality' },
     { name: 'Construction', route: 'construction' },
     { name: 'Education', route: 'education' },
+    { name: 'Non-Profit', route: 'non-profit' },
     { name: 'Retail & Trading', route: 'trading' },
   ]
 
@@ -42,7 +43,7 @@ export default function Footer({ onNavigate }) {
   const servicesEcosystemLinks = [
     { name: 'Ecosystem Apps', route: 'apps' },
     { name: 'Enterprise Services', href: '#enterprise' },
-    { name: 'AiBizz Cloud Hosting', href: '#cloud' },
+    { name: 'AiBizz Cloud Hosting', href: 'https://aibizzhub.io/' },
     { name: 'AiBizz Academy', href: '#academy' },
     { name: 'Customers & Success', href: '#customers' },
     { name: 'Partners Network', href: '#partners' },
@@ -67,6 +68,10 @@ export default function Footer({ onNavigate }) {
   const handleNavClick = (target, e) => {
     if (e) e.preventDefault()
     if (!target) return
+    if (target.startsWith('http')) {
+      window.location.href = target
+      return
+    }
     const cleanRoute = target.replace(/^#/, '')
 
     // Direct page routing supported in App.jsx

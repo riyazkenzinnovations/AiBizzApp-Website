@@ -14,7 +14,7 @@ import {
   Calendar
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import logisticsImg from '../../assets/industry/logistics.jpg'
+import logisticsImg from '../../assets/industry-images/logistics.jpeg'
 
 export default function Logistics({ onNavigate }) {
   const challenges = [

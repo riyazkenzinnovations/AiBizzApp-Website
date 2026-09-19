@@ -14,7 +14,7 @@ import {
   Package
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import tradingImg from '../../assets/industry/trading.jpg'
+import tradingImg from '../../assets/industry-images/logistics.jpeg'
 
 export default function Trading({ onNavigate }) {
   const challenges = [

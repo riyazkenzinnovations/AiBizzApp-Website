@@ -14,7 +14,7 @@ import {
   Hospital
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import healthcareImg from '../../assets/industry/healthcare.jpg'
+import healthcareImg from '../../assets/industry-images/hospitality.jpeg'
 
 export default function Healthcare({ onNavigate }) {
   const challenges = [

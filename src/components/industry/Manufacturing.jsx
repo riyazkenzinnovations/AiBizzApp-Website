@@ -14,7 +14,7 @@ import {
   GitMerge
 } from 'lucide-react'
 import IndustryTemplate from './IndustryTemplate'
-import manufacturingImg from '../../assets/industry/manufacturing/hero.jpg'
+import manufacturingImg from '../../assets/industry-images/engineering.jpeg'
 
 export default function Manufacturing({ onNavigate }) {
   const challenges = [

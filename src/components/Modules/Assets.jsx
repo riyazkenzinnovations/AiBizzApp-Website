@@ -1,12 +1,11 @@
 import React from 'react'
 import { ArrowRight, MousePointerClick, Plug, Smartphone, Sliders, GitMerge, ShieldCheck } from 'lucide-react'
 
-// UI Screenshots
-import img1 from '../../assets/accounting/media_1789475334615.png'
-import img2 from '../../assets/accounting/media_1789475345323.png'
-import img3 from '../../assets/accounting/media_1789475358358.png'
-import img4 from '../../assets/accounting/media_1789475370670.png'
-import img5 from '../../assets/accounting/media_1789475395204.png'
+import img1 from '../../assets/modules/AiBizzApp1.jpeg'
+import img2 from '../../assets/modules/AiBizzApp2.jpeg'
+import img3 from '../../assets/modules/AiBizzApp3.jpeg'
+import img4 from '../../assets/modules/AiBizzApp4.jpeg'
+import img5 from '../../assets/modules/AiBizzApp5.jpeg'
 
 const platformFeatures = [
   { icon: MousePointerClick, title: 'No-code builder',     desc: 'Automate tasks with drag-and-drop simplicity' },
@@ -267,7 +266,7 @@ export default function Assets({ onNavigate }) {
 
         {/* ── Choose Freedom with AiBizzApp Banner ── */}
         <div className="mt-12 mb-8 py-14 px-6 sm:px-12 rounded-3xl bg-slate-900 text-white text-center shadow-xl">
-          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-white">
             Choose Freedom with AiBizzApp
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-xl mx-auto">
