@@ -43,7 +43,8 @@ import Footer from './components/Footer'
 
 const industryComponents = {
   retail: Retail,
-  manufacturing: IndustryManufacturing,
+  'industry-manufacturing': IndustryManufacturing,
+  'manufacturing-industry': IndustryManufacturing,
   construction: Construction,
   education: Education,
   electronics: Electronics,
@@ -60,7 +61,7 @@ const industryComponents = {
 }
 
 export default function App() {
-  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'ecommerce', 'contact', 'apps']
+  const KNOWN_PAGES = ['pricing', 'accounting', 'procurement', 'sales', 'crm', 'stock', 'manufacturing', 'manufacturing-module', 'projects', 'assets', 'pos', 'quality', 'support', 'hr-payroll', 'no-code-builder', 'builder', 'ecommerce', 'contact', 'apps']
 
   const getPageFromHash = () => {
     const hash = window.location.hash.replace(/^#/, '').trim()
@@ -123,7 +124,7 @@ export default function App() {
         <HRPayroll onNavigate={handleNavigate} />
       ) : (currentPage === 'no-code-builder' || currentPage === 'builder') ? (
         <NoCodeBuilder onNavigate={handleNavigate} />
-      ) : currentPage === 'manufacturing-module' ? (
+      ) : (currentPage === 'manufacturing' || currentPage === 'manufacturing-module') ? (
         <ModuleManufacturing onNavigate={handleNavigate} />
       ) : currentPage === 'ecommerce' ? (
         <Ecommerce onNavigate={handleNavigate} />
